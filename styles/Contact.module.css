@@ -1,0 +1,135 @@
+.section {
+  padding: 5rem 0;
+  background: var(--color-white);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-teal);
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  letter-spacing: 0.04em;
+  color: var(--color-navy);
+  margin-bottom: 0.75rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: var(--color-grey);
+  line-height: 1.65;
+  margin-bottom: 2.5rem;
+  max-width: 440px;
+}
+
+/* Boutons */
+.ctas {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+  max-width: 320px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: var(--font-body);
+  text-decoration: none;
+  transition: all 0.25s;
+}
+
+.btn__primary {
+  background: var(--color-teal);
+  color: var(--color-white);
+}
+
+.btn__primary:hover {
+  background: #009a9a;
+  transform: translateY(-2px);
+}
+
+.btn__whatsapp {
+  background: #25D366;
+  color: var(--color-white);
+}
+
+.btn__whatsapp:hover {
+  background: #1ebe5c;
+  transform: translateY(-2px);
+}
+
+.btn__insta {
+  background: transparent;
+  color: var(--color-navy);
+  border: 2px solid rgba(13, 33, 55, 0.15);
+}
+
+.btn__insta:hover {
+  border-color: var(--color-navy);
+  background: rgba(13, 33, 55, 0.04);
+}
+
+/* Infos */
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--color-grey);
+}
+
+.emailLink {
+  color: var(--color-teal);
+  text-decoration: none;
+}
+
+.emailLink:hover {
+  text-decoration: underline;
+}
+
+/* Carte */
+.mapCol {
+  height: 460px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(13, 33, 55, 0.08);
+  box-shadow: 0 8px 30px rgba(13, 33, 55, 0.08);
+}
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .mapCol {
+    height: 320px;
+  }
+
+  .ctas {
+    max-width: 100%;
+  }
+}

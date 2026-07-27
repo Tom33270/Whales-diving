@@ -1,15 +1,29 @@
-import styles from '../styles/Home.module.css';
+import Navbar from './layout/Navbar';
+import Footer from './layout/Footer';
+import Hero from './sections/Hero';
+import Stats from './sections/Stats';
+import Activities from './sections/Activities';
+import Pricing from './sections/Pricing';
+import CetaceanBanner from './sections/CetaceanBanner';
+import Reviews from './sections/Reviews';
+import About from './sections/About';
+import Contact from './sections/Contact';
 
-function Home() {
+export default function Home() {
   return (
-    <div>
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <Stats />
+        <Activities />
+        <Pricing />
+        <CetaceanBanner />
+        <Reviews />
+        <About />
+        <Contact />
       </main>
-    </div>
+      <Footer />
+    </>
   );
 }
-
-export default Home;

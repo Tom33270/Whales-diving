@@ -1,0 +1,160 @@
+.section {
+  padding: 5rem 0;
+  background: var(--color-light);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-teal);
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  letter-spacing: 0.04em;
+  color: var(--color-navy);
+  margin-bottom: 0.75rem;
+}
+
+.subtitle {
+  font-size: 1.05rem;
+  color: var(--color-grey);
+  margin-bottom: 2.5rem;
+}
+
+/* Onglets */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tab {
+  background: var(--color-white);
+  border: 1px solid rgba(13, 33, 55, 0.12);
+  border-radius: 8px;
+  padding: 0.6rem 1.1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-grey);
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: var(--font-body);
+}
+
+.tab:hover {
+  border-color: var(--color-teal);
+  color: var(--color-teal);
+}
+
+.tab__active {
+  background: var(--color-navy);
+  border-color: var(--color-navy);
+  color: var(--color-white);
+}
+
+/* Tableau */
+.tableWrap {
+  background: var(--color-white);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(13, 33, 55, 0.08);
+  margin-bottom: 1.5rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.row {
+  border-bottom: 1px solid rgba(13, 33, 55, 0.06);
+  transition: background 0.15s;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.row:hover {
+  background: rgba(0, 181, 181, 0.04);
+}
+
+.rowLabel {
+  padding: 1rem 1.5rem;
+  font-size: 0.9rem;
+  color: var(--color-navy);
+  line-height: 1.5;
+}
+
+.rowPrice {
+  padding: 1rem 1.5rem 1rem 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-teal);
+  white-space: nowrap;
+  text-align: right;
+}
+
+/* Note */
+.note {
+  font-size: 0.82rem;
+  color: var(--color-grey);
+  margin-bottom: 2rem;
+}
+
+/* CTA */
+.cta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.ctaBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.85rem 1.75rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  background: var(--color-teal);
+  color: var(--color-white);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.ctaBtn:hover {
+  background: #009a9a;
+  transform: translateY(-2px);
+}
+
+.ctaBtn__wa {
+  background: #25D366;
+}
+
+.ctaBtn__wa:hover {
+  background: #1ebe5c;
+}
+
+@media (max-width: 600px) {
+  .rowLabel,
+  .rowPrice {
+    padding: 0.75rem 1rem;
+  }
+
+  .rowPrice {
+    padding-right: 1rem;
+  }
+}

@@ -1,0 +1,174 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: var(--color-navy);
+}
+
+/* Fond — remplacer par une vraie image via style inline ou next/image */
+.bg {
+  position: absolute;
+  inset: 0;
+  background: 
+    url('/images/hero-bg.jpg') center center / cover no-repeat,
+    linear-gradient(135deg, #0D2137 0%, #0a3d5c 50%, #00B5B5 100%);
+  /* Le dégradé sert de fallback si l'image n'est pas encore là */
+}
+
+/* Overlay assombrit l'image pour lisibilité du texte */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(13, 33, 55, 0.88) 0%,
+    rgba(13, 33, 55, 0.55) 60%,
+    rgba(13, 33, 55, 0.2) 100%
+  );
+  z-index: 1;
+}
+
+/* Contenu */
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 8rem 1.5rem 4rem;
+  width: 100%;
+  max-width: 700px;
+  margin-left: clamp(1.5rem, 8vw, 12rem);
+}
+
+.tagline {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-teal);
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(3.5rem, 9vw, 7rem);
+  letter-spacing: 0.03em;
+  line-height: 0.95;
+  color: var(--color-white);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.65;
+  max-width: 520px;
+  margin-bottom: 2.5rem;
+}
+
+/* CTAs */
+.ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.9rem 1.75rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.btn__primary {
+  background: var(--color-teal);
+  color: var(--color-white);
+}
+
+.btn__primary:hover {
+  background: #009a9a;
+  transform: translateY(-2px);
+}
+
+.btn__whatsapp {
+  background: #25D366;
+  color: var(--color-white);
+}
+
+.btn__whatsapp:hover {
+  background: #1ebe5c;
+  transform: translateY(-2px);
+}
+
+.btn__outline {
+  background: transparent;
+  color: var(--color-white);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn__outline:hover {
+  border-color: var(--color-white);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Location */
+.location {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.05em;
+}
+
+/* Scroll indicator */
+.scrollIndicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.scrollDot {
+  width: 6px;
+  height: 6px;
+  background: var(--color-teal);
+  border-radius: 50%;
+  animation: scrollBounce 1.8s ease-in-out infinite;
+}
+
+@keyframes scrollBounce {
+  0%, 100% { transform: translateY(0); opacity: 1; }
+  50%       { transform: translateY(10px); opacity: 0.4; }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .content {
+    margin-left: 0;
+    padding: 7rem 1.5rem 4rem;
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: clamp(3rem, 14vw, 5rem);
+  }
+
+  .overlay {
+    background: rgba(13, 33, 55, 0.75);
+  }
+}

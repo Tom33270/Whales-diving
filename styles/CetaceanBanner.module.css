@@ -1,0 +1,83 @@
+.banner {
+  position: relative;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  background:
+    url('/images/cetaces.jpg') center center / cover no-repeat,
+    linear-gradient(135deg, #0a3d5c 0%, #0D2137 100%);
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(13, 33, 55, 0.92) 0%,
+    rgba(13, 33, 55, 0.6) 100%
+  );
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+  max-width: 640px;
+  margin-left: clamp(1.5rem, 10vw, 14rem);
+}
+
+.eyebrow {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-lime);
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  letter-spacing: 0.04em;
+  color: var(--color-white);
+  margin-bottom: 1.25rem;
+  line-height: 1;
+}
+
+.text {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  max-width: 500px;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.9rem 1.75rem;
+  background: #25D366;
+  color: var(--color-white);
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.25s;
+}
+
+.cta:hover {
+  background: #1ebe5c;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .content {
+    margin-left: 0;
+    padding: 3rem 1.5rem;
+    max-width: 100%;
+  }
+}
