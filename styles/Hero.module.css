@@ -12,8 +12,9 @@
   position: absolute;
   inset: 0;
   background: 
-    url('/images/hero-bg.jpg') center center / cover no-repeat,
+    url('/images/hero-photo.jpg') center center / cover no-repeat,
     linear-gradient(135deg, #0D2137 0%, #0a3d5c 50%, #00B5B5 100%);
+    transform: scaleX(-1);
   /* Le dégradé sert de fallback si l'image n'est pas encore là */
 }
 
@@ -44,7 +45,7 @@
 
 .tagline {
   font-family: var(--font-body);
-  font-size: 0.75rem;
+  font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;

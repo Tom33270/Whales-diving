@@ -32,8 +32,10 @@
   flex-shrink: 0;
 }
 
-.logo__whale {
-  font-size: 1.4rem;
+.logo__img {
+  height: 36px;
+  width: auto;
+  object-fit: contain;
 }
 
 .logo__text {
@@ -82,25 +84,33 @@
 
 .langBtn {
   background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 0.7rem;
-  font-weight: 700;
-  padding: 0.25rem 0.5rem;
+  border: 2px solid transparent;
+  padding: 0.15rem;
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.2s;
+  opacity: 0.55;
+  display: flex;
+  align-items: center;
+}
+
+.langFlag {
+  width: 24px;
+  height: 16px;
+  object-fit: cover;
+  border-radius: 2px;
+  display: block;
 }
 
 .langBtn:hover {
   border-color: var(--color-teal);
-  color: var(--color-teal);
+  opacity: 1;
 }
 
 .langBtn__active {
-  background: var(--color-teal);
   border-color: var(--color-teal);
-  color: var(--color-white);
+  background: rgba(0, 181, 181, 0.2);
+  opacity: 1;
 }
 
 /* CTA desktop */

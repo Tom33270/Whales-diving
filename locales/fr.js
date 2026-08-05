@@ -12,7 +12,7 @@ const fr = {
     tagline: 'Wild Well Dive',
     title: 'Plongez dans\nl\'extraordinaire',
     subtitle:
-      'Formations, exploration et sorties cétacés avec un moniteur diplômé d\'État. Une expérience privée, sur mesure, loin du tourisme de masse.',
+      `Vivez des expériences uniques : découverte de la plongée, sorties cétacés avec mise à l'eau et formations, encadrées par un moniteur diplômé d'État passionné`,
     cta_call: 'Appeler Paco',
     cta_instagram: 'Instagram',
     location: 'Saint-Gilles-les-Bains · La Réunion',
@@ -32,14 +32,17 @@ const fr = {
 
   activities: {
     eyebrow: 'Nos activités',
-    title: 'Une plongée pour chaque projet',
-    subtitle: 'Débutant, plongeur confirmé ou passionné de cétacés — chaque sortie est construite autour de vous.',
+    title: 'Quelle aventure vous ressemble ?',
+    subtitle: `Choisissez l'expérience qui vous correspond. Découvrez la plongée, partez à la rencontre des cétacés lors d'une mise à l'eau, formez-vous ou explorez les plus beaux sites de plongée de La Réunion.`,
     items: [
       {
         slug: 'bapteme-initiation',
         emoji: '🤿',
         title: 'Baptême & Initiation',
-        description: 'Découvrez la plongée en toute sécurité, encadré par Paco. Dès 8 ans.',
+        description: `Je découvre la plongée.
+Initiation en duo.
+Une expérience complète pour découvrir la plongée en toute sécurité.
+`,
         price: 'À partir de 90€',
       },
       {

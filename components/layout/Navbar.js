@@ -23,7 +23,11 @@ export default function Navbar() {
     { label: t('nav.contact'),    href: '/#contact' },
   ];
 
-  const LANGS = ['fr', 'en', 'es'];
+  const LANGS = [
+    { code: 'fr', flag: 'https://flagcdn.com/w40/fr.png', label: 'Français' },
+    { code: 'en', flag: 'https://flagcdn.com/w40/gb.png', label: 'English' },
+    { code: 'es', flag: 'https://flagcdn.com/w40/es.png', label: 'Español' },
+  ];
 
   return (
     <header className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
@@ -31,7 +35,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/">
           <a className={styles.logo}>
-            <span className={styles.logo__whale}>🐋</span>
+            <img src="/images/logo.png" alt="Whale Diving" className={styles.logo__img} />
             <span className={styles.logo__text}>Whale Diving</span>
           </a>
         </Link>
@@ -50,11 +54,12 @@ export default function Navbar() {
           <div className={styles.langSwitcher}>
             {LANGS.map((l) => (
               <button
-                key={l}
-                onClick={() => setLang(l)}
-                className={`${styles.langBtn} ${lang === l ? styles.langBtn__active : ''}`}
+                key={l.code}
+                onClick={() => setLang(l.code)}
+                className={`${styles.langBtn} ${lang === l.code ? styles.langBtn__active : ''}`}
+                title={l.label}
               >
-                {l.toUpperCase()}
+                <img src={l.flag} alt={l.label} className={styles.langFlag} />
               </button>
             ))}
           </div>
@@ -91,11 +96,12 @@ export default function Navbar() {
           <div className={styles.mobileLang}>
             {LANGS.map((l) => (
               <button
-                key={l}
-                onClick={() => { setLang(l); setMenuOpen(false); }}
-                className={`${styles.langBtn} ${lang === l ? styles.langBtn__active : ''}`}
+                key={l.code}
+                onClick={() => { setLang(l.code); setMenuOpen(false); }}
+                className={`${styles.langBtn} ${lang === l.code ? styles.langBtn__active : ''}`}
+                title={l.label}
               >
-                {l.toUpperCase()}
+                <img src={l.flag} alt={l.label} className={styles.langFlag} />
               </button>
             ))}
           </div>
