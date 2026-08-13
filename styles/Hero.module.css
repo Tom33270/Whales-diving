@@ -159,17 +159,25 @@
 
 /* Mobile */
 @media (max-width: 768px) {
+  @media (max-width: 480px) {
   .content {
     margin-left: 0;
-    padding: 6rem 1.25rem 3rem;
+    padding: 6rem 1rem 3rem;
     max-width: 100%;
+    width: 100%;
   }
 
   .title {
-    font-size: clamp(2.8rem, 12vw, 4.5rem);
-    line-height: 1;
-    margin-bottom: 1rem;
+    font-size: clamp(2.2rem, 10vw, 3rem);
+    word-break: break-word;
+    overflow-wrap: break-word;
   }
+
+  .btn {
+    white-space: normal;
+    text-align: center;
+  }
+}
 
   .subtitle {
     font-size: 0.95rem;
@@ -185,9 +193,5 @@
     gap: 0.6rem;
   }
 
-  .btn {
-    width: 100%;
-    justify-content: center;
-    padding: 0.85rem 1rem;
-  }
+  
 }
