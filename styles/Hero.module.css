@@ -168,9 +168,10 @@
   }
 
   .title {
-    font-size: clamp(2.2rem, 10vw, 3rem);
-    word-break: break-word;
-    overflow-wrap: break-word;
+    font-size: clamp(2rem, 9vw, 2.8rem);
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
   }
 
   .btn {
