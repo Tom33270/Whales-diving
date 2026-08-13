@@ -39,31 +39,28 @@ const fr = {
         slug: 'bapteme-initiation',
         emoji: '🤿',
         title: 'Baptême & Initiation',
-        description: `Je découvre la plongée.
-Initiation en duo.
-Une expérience complète pour découvrir la plongée en toute sécurité.
-`,
+        description: `Découvrez la plongée grâce à deux expériences adaptées à vos envies, accessibles dès 8 ans.`,
         price: 'À partir de 90€',
       },
       {
         slug: 'exploration',
         emoji: '🌊',
         title: 'Exploration encadrée',
-        description: 'Explorez les fonds coralliens de Saint-Gilles. Spots exceptionnels, petits groupes.',
+        description: `Explorez les plus beaux sites de plongée de La Réunion, en petits groupes et encadré par un moniteur diplômé d'État.`,
         price: 'À partir de 60€',
       },
       {
         slug: 'formations',
         emoji: '📋',
         title: 'Formations',
-        description: 'N1, N2, PE40, PA20, Nitrox — certification reconnue ANMP, SDI/TDI.',
+        description: ` Du Niveau 1 au Niveau 3, développez vos compétences avec des formations ANMP reconnues à l'international. Nitrox et formations complémentaires sur demande.`,
         price: 'À partir de 260€',
       },
       {
         slug: 'cetaces',
         emoji: '🐋',
         title: 'Sorties cétacés',
-        description: 'Dauphins toute l\'année · Baleines de juillet à septembre. Protocole CAP respecté.',
+        description: `Dauphins toute l'année et Baleines de juillet à septembre Sorties avec mise à l'eau dans le respect des animaux.`,
         price: 'À partir de 90€',
       },
     ],

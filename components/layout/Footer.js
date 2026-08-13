@@ -10,7 +10,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.inner}>
         <div className={styles.brand}>
-          <div className={styles.badge}>🐋</div>
+          <div className={styles.badge}><img src="/images/logo.png" alt="Whale Diving"/></div>
           <p className={styles.tagline}>{t('footer.tagline')}</p>
           <p className={styles.location}>📍 {t('footer.location')}</p>
           <a href="mailto:whalediving.re@gmail.com" className={styles.email}>

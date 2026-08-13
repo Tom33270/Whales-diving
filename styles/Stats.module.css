@@ -1,5 +1,5 @@
 .stats {
-  background: var(--color-teal);
+  background: linear-gradient(180deg, #0a3d5c 0%, #0D2137 50%, #112a45 100%);
   padding: 2.5rem 0;
 }
 

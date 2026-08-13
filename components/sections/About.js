@@ -12,7 +12,7 @@ export default function About() {
         <div className={styles.imageCol}>
           <div className={styles.photoWrap}>
             {/* Placeholder — remplacer par next/image quand photo dispo */}
-            <div className={styles.photoPlaceholder}>🤿</div>
+             <img src="/images/paco.JPG" alt="Paco — moniteur Whale Diving" className={styles.photo} />
           </div>
           <p className={styles.languages}>🗣️ {t('about.languages')}</p>
         </div>
