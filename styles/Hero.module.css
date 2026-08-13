@@ -17,6 +17,7 @@
   transform: scaleX(-1);
 }
 
+
 /* Overlay assombrit l'image pour lisibilité du texte */
 .overlay {
   position: absolute;
