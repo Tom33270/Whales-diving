@@ -14,8 +14,7 @@
   background: 
     url('/images/hero-photo.jpg') center center / cover no-repeat,
     linear-gradient(135deg, #0D2137 0%, #0a3d5c 50%, #00B5B5 100%);
-    transform: scaleX(-1);
-  /* Le dégradé sert de fallback si l'image n'est pas encore là */
+  transform: scaleX(-1);
 }
 
 /* Overlay assombrit l'image pour lisibilité du texte */
@@ -45,7 +44,7 @@
 
 .tagline {
   font-family: var(--font-body);
-  font-size: 1.1rem;
+  font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -161,15 +160,33 @@
 @media (max-width: 768px) {
   .content {
     margin-left: 0;
-    padding: 7rem 1.5rem 4rem;
+    padding: 6rem 1.25rem 3rem;
     max-width: 100%;
   }
 
   .title {
-    font-size: clamp(3rem, 14vw, 5rem);
+    font-size: clamp(2.8rem, 12vw, 4.5rem);
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 1.75rem;
   }
 
   .overlay {
-    background: rgba(13, 33, 55, 0.75);
+    background: rgba(13, 33, 55, 0.8);
+  }
+
+  .ctas {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 0.85rem 1rem;
   }
 }
