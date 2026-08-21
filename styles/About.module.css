@@ -11,9 +11,9 @@
   grid-template-columns: 380px 1fr;
   gap: 5rem;
   align-items: start;
+  position: relative;
 }
 
-/* Photo */
 .imageCol {
   display: flex;
   flex-direction: column;
@@ -21,7 +21,10 @@
   gap: 1.25rem;
   position: sticky;
   top: 5rem;
+  z-index: 1;
 }
+
+
 
 .photoWrap {
   width: 100%;
@@ -49,6 +52,8 @@
 /* Texte */
 .textCol {
   padding-top: 0.5rem;
+  position: relative;
+  z-index: 1;
 }
 
 .eyebrow {

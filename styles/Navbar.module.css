@@ -37,6 +37,21 @@
   width: auto;
   object-fit: contain;
 }
+.logo__textWrap {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.logo__sub {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-teal);
+  opacity: 0.85;
+}
 
 .logo__text {
   font-family: var(--font-display);

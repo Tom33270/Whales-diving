@@ -36,7 +36,10 @@ export default function Navbar() {
         <Link href="/">
           <a className={styles.logo}>
             <img src="/images/logo.png" alt="Whale Diving" className={styles.logo__img} />
-            <span className={styles.logo__text}>Whale Diving</span>
+            <div className={styles.logo__textWrap}>
+              <span className={styles.logo__text}>Whale Diving</span>
+              <span className={styles.logo__sub}>Centre de plongée</span>
+            </div>
           </a>
         </Link>
 
