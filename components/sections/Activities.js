@@ -18,8 +18,8 @@ export default function Activities() {
             <Link key={item.slug} href={`/${item.slug}`}>
               <a className={styles.card}>
                 <div className={styles.card__img}>
-                  <span className={styles.card__emoji}>{item.emoji}</span>
-                </div>
+                  <img src={`/images/${item.slug}.jpg`} alt={item.title} className={styles.card__imgPhoto} />
+                </div>      
                 <div className={styles.card__body}>
                   <h3 className={styles.card__title}>{item.title}</h3>
                   <p className={styles.card__desc}>{item.description}</p>

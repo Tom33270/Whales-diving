@@ -57,8 +57,10 @@
 }
 
 .card__stars {
-  font-size: 0.9rem;
-  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-bottom: 0.5rem;
 }
 
 .card__text {

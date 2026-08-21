@@ -20,7 +20,7 @@ export default function BaptemeInitiation() {
       {/* Hero */}
       <section className={styles.hero}>
         <div className={styles.hero__overlay} />
-        <div className={styles.hero__bg} style={{ backgroundImage: "url('/images/bapteme.jpg')" }} />
+        <div className={styles.hero__bg} style={{ backgroundImage: "url('/images/bapteme-initiation.jpg')" }} />
         <div className={styles.hero__content}>
           <p className={styles.hero__eyebrow}>🤿 Baptême & Initiation</p>
           <h1 className={styles.hero__title}>Votre première respiration sous l'eau</h1>
