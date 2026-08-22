@@ -5,7 +5,7 @@ import Footer from '../components/layout/Footer';
 import styles from '../styles/ActivityDetail.module.css';
 
 export default function Cetaces() {
-  return (
+  return ( 
     <>
       <Head>
         <title>Sorties cétacés — Whale Diving La Réunion</title>
