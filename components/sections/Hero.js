@@ -40,7 +40,7 @@ export default function Hero() {
         </div>
         <p className={styles.location}>📍 {t('hero.location')}</p>
       </div>
-       <img src="/images/logo-société.png" alt="Whale Diving" className={styles.logoSociete} />
+       <img src="/images/logo-societe.png" alt="Whale Diving" className={styles.logoSociete} />
       <div className={styles.scrollIndicator}>
         <div className={styles.scrollDot} />
       </div>
