@@ -15,7 +15,7 @@ export default function Reviews() {
         <div className={styles.grid}>
           {Array.isArray(items) && items.map((review, i) => (
             <div key={i} className={styles.card}>
-              <div className={styles.card__stars}>⭐⭐⭐⭐⭐</div>
+                
               <p className={styles.card__text}>« {review.text} »</p>
               <div className={styles.card__footer}>
                 <span className={styles.card__name}>{review.name}</span>

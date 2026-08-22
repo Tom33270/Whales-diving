@@ -41,7 +41,7 @@ export default function Navbar() {
               <span className={styles.logo__sub}>Centre de plongée</span>
             </div>
           </a>
-        </Link>
+        </Link> 
 
         {/* Nav desktop */}
         <nav className={styles.nav}>
