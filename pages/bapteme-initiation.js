@@ -20,7 +20,7 @@ export default function BaptemeInitiation() {
       {/* Hero */}
       <section className={styles.hero}>
         <div className={styles.hero__overlay} />
-        <div className={styles.hero__bg} style={{ backgroundImage: "url('/images/bapteme-initiation.jpg')" }} />
+        <div className={styles.hero__bg} style={{ backgroundImage: "url('/images/bapteme-initiation.jpeg')" }} />
         <div className={styles.hero__content}>
           <p className={styles.hero__eyebrow}>🤿 Baptême & Initiation</p>
           <h1 className={styles.hero__title}>Votre première respiration sous l'eau</h1>
@@ -62,7 +62,7 @@ export default function BaptemeInitiation() {
                   <span className={styles.highlight__icon}>🎓</span>
                   <div>
                     <strong>Moniteur DEJEPS</strong>
-                    <p>Diplôme d'État niveau 5</p>
+                    <p>Diplômé d'état DEJEPS E3</p>
                   </div>
                 </div>
                 <div className={styles.highlight}>

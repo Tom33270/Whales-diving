@@ -42,8 +42,8 @@ export default function Pricing() {
             </tbody>
           </table>
         </div>
-
-        <p className={styles.note}>ℹ️ {t('pricing.note')}</p>
+        <p className={styles.note2}>{t('pricing.note1')}</p>
+        <p className={styles.note1}>ℹ️ {t('pricing.note2')}</p>
 
         {/* CTA */}
         <div className={styles.cta}>

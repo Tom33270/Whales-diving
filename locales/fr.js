@@ -26,7 +26,7 @@ const fr = {
     experience_label: "d'expérience internationale",
     languages: '3 langues',
     languages_label: 'Français · English · Español',
-    group: '6 pers. max',
+    group: 'Petit groupe',
     group_label: 'par sortie, encadrement privé',
   },
 
@@ -70,7 +70,8 @@ const fr = {
     eyebrow: 'Tarifs 2026',
     title: 'Des prix clairs, tout compris',
     subtitle: `Tous les tarifs sont indiqués TTC. Matériel fourni selon l'activité.`,
-    note: 'Tarifs valables en 2026 · Certification incluse dans les formations · Matériel fourni',
+    note1:'* Pour toutes autres formations ou spécialités, sur demande',
+    note2: 'Tarifs valables en 2026 · Certification incluse dans les formations · Matériel fourni',
     categories: [
       {
         title: 'Sortie Cétacés',
@@ -98,11 +99,11 @@ const fr = {
       {
         title: 'Formations',
         rows: [
+          { label: 'Plongeur Encadré 12m · 3 plongées  · certification + cours théoriques inclus', price: '260€' },
           { label: 'Niveau 1 / Open Water 20m · 5 plongées · certification + cours théoriques inclus', price: '450€' },
           { label: 'Niveau 2 / Advanced Open Water · 10 plongées · certification + carnet de plongée inclus', price: '720€' },
           { label: 'Plongeur Encadré 40m (PE40) · 4 plongées  · certification + cours théoriques inclus', price: '320€' },
-          { label: 'Plongeur Autonome 20m (PA20) · 6 plongées  · certification + cours théoriques inclus', price: '450€' },
-          { label: 'Plongeur Encadré 12m · 3 plongées  · certification + cours théoriques inclus', price: '260€' },
+          { label: 'Plongeur Autonome 20m (PA20) · 6 plongées  · certification + cours théoriques inclus', price: '450€' }, 
           { label: 'Nitrox Simple · 2 plongées · air enrichi  · certification + cours théoriques inclus', price: '180€' },
         ],
       },
@@ -208,16 +209,16 @@ Il y a 5 ans, j'ai choisi de revenir sur mon île natale pour créer Whale Divin
 
 Que ce soit pour un baptême, une sortie cétacés, une formation ou une plongée d'exploration, chaque sortie est pensée pour s'adapter à votre niveau, à vos envies et à votre rythme.`,
     credentials: [
-      'DEJEPS Plongée sous-marine — Diplôme d\'État niveau 5',
+      'DEJEPS Plongée sous-marine — Diplôme d\'État E3',
       `PADI Master Scuba Diver Trainer (MSDT)`,
       `Moniteur et formateur ANMP – Certifications reconnues à l'international`,
       'Plus de 20 ans d\'expérience — France, Philippines, international',
       `15 ans de carrière internationale (Mexique, Philippines, Thaïlande...)`,
       `Fondateur d'un centre de plongée aux Philippines, devenu l'ONG Ocean Farmers, spécialisée dans la restauration des récifs coralliens`,
       'Permis bateau côtier et hauturier',
-      'Premier Secours E1 secouriste à jour (2026)',
+      'Premier Secours E1 secouriste à jour',
       `Formation à l'observation responsable des cétacés (CEDTM)`,
-      'Assurance Responsabilité Civil professionnel',
+      'Assurance Responsabilité Civil professionnelle',
     ],
     languages: 'Français · English · Español',
   },
@@ -229,7 +230,7 @@ Que ce soit pour un baptême, une sortie cétacés, une formation ou une plongé
     cta_call: 'Appeler Paco',
     cta_whatsapp: 'WhatsApp',
     cta_instagram: 'Instagram',
-    address: 'Saint-Gilles-les-Bains · La Réunion',
+    address: 'Port de plaisance, Saint-Gilles-les-Bains · La Réunion',
     email: 'whalediving.re@gmail.com',
   },
 
