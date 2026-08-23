@@ -59,9 +59,10 @@
 }
 
 .tab__active {
-  background: var(--color-navy);
-  border-color: var(--color-navy);
+  background: linear-gradient(135deg, #041616 0%, #036565 50%, #007a7a 100%);
+  border-color: transparent;
   color: var(--color-white);
+  box-shadow: 0 4px 15px rgba(0, 181, 181, 0.3);
 }
 
 /* Tableau */
@@ -140,12 +141,28 @@
   transform: translateY(-2px);
 }
 
+.btn__primary {
+  background: linear-gradient(135deg, #007a7a 0%, #00B5B5 50%, #007a7a 100%);
+  color: var(--color-white);
+  box-shadow: 0 4px 15px rgba(0, 181, 181, 0.3);
+}
+
+.btn__primary:hover {
+  background: linear-gradient(135deg, #005f5f 0%, #009a9a 50%, #005f5f 100%);
+  box-shadow: 0 6px 20px rgba(0, 181, 181, 0.5);
+  transform: translateY(-2px);
+}
+
 .ctaBtn__wa {
-  background: #25D366;
+    background: linear-gradient(135deg, #128C7E 0%, #25D366 50%, #128C7E 100%);
+  color: var(--color-white);
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
 }
 
 .ctaBtn__wa:hover {
-  background: #1ebe5c;
+   background: linear-gradient(135deg, #075E54 0%, #1ebe5c 50%, #075E54 100%);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+  transform: translateY(-2px);
 }
 
 @media (max-width: 600px) {

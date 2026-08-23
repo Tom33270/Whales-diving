@@ -130,8 +130,9 @@
 
 /* CTA desktop */
 .ctaBtn {
-  background: var(--color-teal);
+   background: linear-gradient(135deg, #007a7a 0%, #00B5B5 50%, #007a7a 100%);
   color: var(--color-white);
+  box-shadow: 0 4px 15px rgba(0, 181, 181, 0.3);
   font-size: 0.8rem;
   font-weight: 700;
   padding: 0.55rem 1.1rem;
@@ -142,8 +143,9 @@
 }
 
 .ctaBtn:hover {
-  background: #009a9a;
-  transform: translateY(-1px);
+  background: linear-gradient(135deg, #005f5f 0%, #009a9a 50%, #005f5f 100%);
+  box-shadow: 0 6px 20px rgba(0, 181, 181, 0.5);
+  transform: translateY(-2px);
 }
 
 /* Burger */

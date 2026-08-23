@@ -25,8 +25,8 @@ export default function Navbar() {
 
   const LANGS = [
     { code: 'fr', flag: 'https://flagcdn.com/w40/fr.png', label: 'Français' },
-    { code: 'en', flag: 'https://flagcdn.com/w40/gb.png', label: 'English' },
-    { code: 'es', flag: 'https://flagcdn.com/w40/es.png', label: 'Español' },
+    // { code: 'en', flag: 'https://flagcdn.com/w40/gb.png', label: 'English' },
+    // { code: 'es', flag: 'https://flagcdn.com/w40/es.png', label: 'Español' },
   ];
 
   return (
