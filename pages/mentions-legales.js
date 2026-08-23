@@ -23,6 +23,7 @@ export default function MentionsLegales() {
           <section className={styles.section}>
             <h2 className={styles.heading}>Éditeur du site</h2>
             <p>Whale Diving</p>
+            <p>Numéro de SIRET: 803 103 761 00042</p>
             <p>Exploitant individuel : François Fournier (dit Paco)</p>
             <p>Saint-Gilles-les-Bains, La Réunion (974)</p>
             <p>Email : <a href="mailto:whalediving.re@gmail.com" className={styles.link}>whalediving.re@gmail.com</a></p>
