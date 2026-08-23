@@ -21,7 +21,7 @@ const fr = {
   stats: {
     rating: '5.0',
     rating_label: 'avis Google',
-    rating_count: '73 avis vérifiés',
+    rating_count: '+80 avis vérifiés',
     experience: '+20 ans',
     experience_label: "d'expérience internationale",
     languages: '3 langues',
