@@ -21,7 +21,7 @@ const fr = {
   stats: {
     rating: '5.0',
     rating_label: 'avis Google',
-    rating_count: '73 avis vérifiés',
+    rating_count: '+80 avis vérifiés',
     experience: '+20 ans',
     experience_label: "d'expérience internationale",
     languages: '3 langues',
@@ -70,7 +70,7 @@ const fr = {
     eyebrow: 'Tarifs 2026',
     title: 'Des prix clairs, tout compris',
     subtitle: `Tous les tarifs sont indiqués TTC. Matériel fourni selon l'activité.`,
-    note1:'* Pour toutes autres formations ou spécialités, sur demande',
+    note1:'* Pour toutes autres formations ou spécialité - sur demande',
     note2: 'Tarifs valables en 2026 · Certification incluse dans les formations · Matériel fourni',
     categories: [
       {
