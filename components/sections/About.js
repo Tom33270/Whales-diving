@@ -14,7 +14,11 @@ export default function About() {
             {/* Placeholder — remplacer par next/image quand photo dispo */}
              <img src="/images/paco.jpg" alt="Paco — moniteur Whale Diving" className={styles.photo} />
           </div>
-          <p className={styles.languages}>🗣️ {t('about.languages')}</p>
+          <p className={styles.languages}>
+            <img src="https://flagcdn.com/w40/fr.png" alt="Français" className={styles.langFlag} />
+            <img src="https://flagcdn.com/w40/gb.png" alt="English" className={styles.langFlag} />
+            <img src="https://flagcdn.com/w40/es.png" alt="Español" className={styles.langFlag} />
+          </p>
         </div>
 
         {/* Colonne droite : contenu */}

@@ -41,12 +41,20 @@
   object-position: center top;
 }
 
+
+
 .languages {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--color-grey);
-  text-align: center;
-  letter-spacing: 0.05em;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.langFlag {
+  width: 32px;
+  height: 21px;
+  object-fit: cover;
+  border-radius: 3px;
 }
 
 /* Texte */
