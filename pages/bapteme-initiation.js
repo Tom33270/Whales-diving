@@ -32,7 +32,7 @@ export default function BaptemeInitiation() {
           <p className={styles.hero__subtitle}>Dès 8 ans · 6m de profondeur max · Encadrement privé avec Paco</p>
           <div className={styles.hero__ctas}>
             <a href={contact.telephone_url} className={`${styles.btn} ${styles.btn__primary}`}>📞 Appeler Paco</a>
-            <a href={contact.whatsapp_url} target="_blank" rel="noopener noreferrer" className={`${styles.btn} ${styles.btn__whatsapp}`}>💬 WhatsApp</a>
+            <a href={contact.whatsapp_url} target="_blank" rel="noopener noreferrer" className={`${styles.btn} ${styles.btn__whatsapp}`}onClick={() => window.gtag_report_conversion('https://wa.me/262693873336')}>💬 WhatsApp</a>
           </div>
         </div>
       </section>
@@ -86,7 +86,7 @@ export default function BaptemeInitiation() {
                   <li>✓ Briefing sécurité inclus</li>
                   <li>✓ Accompagnement Paco</li>
                 </ul>
-                <a href={contact.whatsapp_url} target="_blank" rel="noopener noreferrer" className={`${styles.btn} ${styles.btn__primary}`}>Réserver</a>
+                <a href={contact.whatsapp_url} target="_blank" rel="noopener noreferrer" className={`${styles.btn} ${styles.btn__primary}`}onClick={() => window.gtag_report_conversion('https://wa.me/262693873336')}>Réserver</a>
               </div>
               <div className={`${styles.pricing__card} ${styles.pricing__card__featured}`}>
                 <div className={styles.pricing__badge}>Recommandé</div>
@@ -102,7 +102,7 @@ export default function BaptemeInitiation() {
                   <li>✓ Valide la 1ère plongée N1</li>
                   <li>✓ Plonger à 2 possible</li>
                 </ul>
-                <a href={contact.whatsapp_url} target="_blank" rel="noopener noreferrer" className={`${styles.btn} ${styles.btn__primary}`}>Réserver</a>
+                <a href={contact.whatsapp_url} target="_blank" rel="noopener noreferrer" className={`${styles.btn} ${styles.btn__primary}`}onClick={() => window.gtag_report_conversion('https://wa.me/262693873336')}>Réserver</a>
               </div>
             </div>
           </div>

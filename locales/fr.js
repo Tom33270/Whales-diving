@@ -76,7 +76,7 @@ const fr = {
       {
         title: 'Sortie Cétacés',
         rows: [
-          { label: '1 personne · 3h · hors saison baleine (6 pers. max)', price: '90€' },
+          { label: '1 personne · 3h · basse saison baleine (6 pers. max)', price: '90€' },
           { label: '1 personne · 3h · haute saison baleine (juil.–sept.) · sortie privée possible', price: '120€' },
         ],
       },
@@ -84,26 +84,26 @@ const fr = {
         title: 'Baptême & Initiation',
         rows: [
           { label: 'Baptême · 30 min · 6m max · Découverte de la plongée', price: '90€' },
-          { label: "Initiation · 60 min · 6m max · Valide la 1ère plongée du N1 · alternative au baptême", price: '110€' },
+          { label: "Initiation · 60 min · 6m max · Valide la 1ère plongée du N1 · alternative au baptême", price: '120€' },
         ],
       },
       {
         title: 'Exploration encadrée',
         rows: [
-          { label: '1 plongée', price: '60€' },
-          { label: '3 plongées', price: '165€' },
-          { label: '6 plongées', price: '315€' },
-          { label: '10 plongées', price: '500€' },
+          { label: '1 plongée', price: '65€' },
+          { label: '3 plongées', price: '180€' },
+          { label: '6 plongées', price: '345€' },
+          { label: '10 plongées', price: '550€' },
         ],
       },
       {
         title: 'Formations',
         rows: [
-          { label: 'Plongeur Encadré 12m · 3 plongées  · certification + cours théoriques inclus', price: '260€' },
+          { label: 'Plongeur Encadré 12m · 3 plongées  · certification + cours théoriques inclus', price: '270€' },
           { label: 'Niveau 1 / Open Water 20m · 5 plongées · certification + cours théoriques inclus', price: '450€' },
-          { label: 'Niveau 2 / Advanced Open Water · 10 plongées · certification + carnet de plongée inclus', price: '720€' },
+          { label: 'Niveau 2 / Advanced Open Water · 10 plongées · certification + carnet de plongée inclus', price: '800€' },
           { label: 'Plongeur Encadré 40m (PE40) · 4 plongées  · certification + cours théoriques inclus', price: '320€' },
-          { label: 'Plongeur Autonome 20m (PA20) · 6 plongées  · certification + cours théoriques inclus', price: '450€' }, 
+          { label: 'Plongeur Autonome 20m (PA20) · 6 plongées  · certification + cours théoriques inclus', price: '480€' }, 
           { label: 'Nitrox Simple · 2 plongées · air enrichi  · certification + cours théoriques inclus', price: '180€' },
         ],
       },

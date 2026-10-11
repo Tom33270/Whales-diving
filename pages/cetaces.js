@@ -32,7 +32,7 @@ export default function Cetaces() {
           <p className={styles.hero__subtitle}>Dauphins toute l'année · Baleines {saison_cetaces.mois_debut} à {saison_cetaces.mois_fin} · Protocole CAP</p>
           <div className={styles.hero__ctas}>
             <a href={contact.telephone_url} className={`${styles.btn} ${styles.btn__primary}`}>📞 Appeler Paco</a>
-            <a href={contact.whatsapp_url} target="_blank" rel="noopener noreferrer" className={`${styles.btn} ${styles.btn__whatsapp}`}>💬 WhatsApp</a>
+            <a href={contact.whatsapp_url} target="_blank" rel="noopener noreferrer" className={`${styles.btn} ${styles.btn__whatsapp}`}onClick={() => window.gtag_report_conversion('https://wa.me/262693873336')}>💬 WhatsApp</a>
           </div>
         </div>
       </section>
@@ -115,7 +115,7 @@ export default function Cetaces() {
             </div>
             <div className={styles.pricing__cta}>
               <a href={contact.telephone_url} className={`${styles.btn} ${styles.btn__primary}`}>📞 Appeler Paco</a>
-              <a href={contact.whatsapp_url} target="_blank" rel="noopener noreferrer" className={`${styles.btn} ${styles.btn__whatsapp}`}>💬 WhatsApp</a>
+              <a href={contact.whatsapp_url} target="_blank" rel="noopener noreferrer" className={`${styles.btn} ${styles.btn__whatsapp}`}onClick={() => window.gtag_report_conversion('https://wa.me/262693873336')}>💬 WhatsApp</a>
             </div>
           </div>
         </section>

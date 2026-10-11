@@ -40,20 +40,20 @@ const content = {
 
     // Baptême & Initiation
     bapteme:    90,
-    initiation: 110,
+    initiation: 120,
 
     // Exploration encadrée
-    exploration_1:  60,
-    exploration_3:  165,
-    exploration_6:  315,
-    exploration_10: 500,
+    exploration_1:  65,
+    exploration_3:  180,
+    exploration_6:  345,
+    exploration_10: 550,
 
     // Formations
     niveau_1:  450,
-    niveau_2:  720,
+    niveau_2:  800,
     pe40:      320,
-    pa20:      450,
-    pe12:      260,
+    pa20:      480,
+    pe12:      270,
     nitrox:    180,
   },
 

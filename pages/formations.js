@@ -87,7 +87,7 @@ export default function Formations() {
           <p className={styles.hero__subtitle}>ANMP · SDI/TDI · Reconnaissance internationale · Moniteur DEJEPS</p>
           <div className={styles.hero__ctas}>
             <a href={contact.telephone_url} className={`${styles.btn} ${styles.btn__primary}`}>📞 Appeler Paco</a>
-            <a href={contact.whatsapp_url} target="_blank" rel="noopener noreferrer" className={`${styles.btn} ${styles.btn__whatsapp}`}>💬 WhatsApp</a>
+            <a href={contact.whatsapp_url} target="_blank" rel="noopener noreferrer" className={`${styles.btn} ${styles.btn__whatsapp}`}onClick={() => window.gtag_report_conversion('https://wa.me/262693873336')}>💬 WhatsApp</a>
           </div>
         </div>
       </section>
@@ -133,7 +133,7 @@ export default function Formations() {
                     <li key={i}>✓ {item}</li>
                   ))}
                 </ul>
-                <a href={contact.whatsapp_url} target="_blank" rel="noopener noreferrer" className={`${styles.btn} ${styles.btn__whatsapp}`}>
+                <a href={contact.whatsapp_url} target="_blank" rel="noopener noreferrer" className={`${styles.btn} ${styles.btn__whatsapp}`}onClick={() => window.gtag_report_conversion('https://wa.me/262693873336')}>
                   💬 Réserver cette formation
                 </a>
               </div>

@@ -32,7 +32,7 @@ export default function Exploration() {
           <p className={styles.hero__subtitle}>Plongeurs certifiés · Spots exceptionnels · Petits groupes</p>
           <div className={styles.hero__ctas}>
             <a href={contact.telephone_url} className={`${styles.btn} ${styles.btn__primary}`}>📞 Appeler Paco</a>
-            <a href={contact.whatsapp_url} target="_blank" rel="noopener noreferrer" className={`${styles.btn} ${styles.btn__whatsapp}`}>💬 WhatsApp</a>
+            <a href={contact.whatsapp_url} target="_blank" rel="noopener noreferrer" className={`${styles.btn} ${styles.btn__whatsapp}`}onClick={() => window.gtag_report_conversion('https://wa.me/262693873336')}>💬 WhatsApp</a>
           </div>
         </div>
       </section>
@@ -88,7 +88,7 @@ export default function Exploration() {
               ))}
             </div>
             <div className={styles.pricing__cta}>
-              <a href={contact.whatsapp_url} target="_blank" rel="noopener noreferrer" className={`${styles.btn} ${styles.btn__whatsapp}`}>
+              <a href={contact.whatsapp_url} target="_blank" rel="noopener noreferrer" className={`${styles.btn} ${styles.btn__whatsapp}`}onClick={() => window.gtag_report_conversion('https://wa.me/262693873336')}>
                 💬 Réserver sur WhatsApp
               </a>
             </div>

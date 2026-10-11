@@ -18,6 +18,24 @@ export default function App({ Component, pageProps }) {
       `
     }}
   />
+  <script
+  dangerouslySetInnerHTML={{
+    __html: `
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18353131007/UESrCPfT0uocEP-buq9E',
+          'event_callback': callback
+        });
+        return false;
+      }
+    `
+  }}
+/>
         <meta name="google-site-verification" content="y8EquUsBQN6V0bbxYD33poLSRaK7WYXvWeZslZIh_fg" />  
         {/* SEO de base */}
         <meta charSet="utf-8" />
