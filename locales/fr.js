@@ -47,14 +47,14 @@ const fr = {
         emoji: '🌊',
         title: 'Exploration encadrée',
         description: `Explorez les plus beaux sites de plongée de La Réunion, en petits groupes et encadré par un moniteur diplômé d'État.`,
-        price: 'À partir de 60€',
+        price: 'À partir de 65€',
       },
       {
         slug: 'formations',
         emoji: '📋',
         title: 'Formations',
         description: ` Du Niveau 1 au Niveau 3, développez vos compétences avec des formations ANMP reconnues à l'international. Nitrox et formations complémentaires sur demande.`,
-        price: 'À partir de 260€',
+        price: 'À partir de 270€',
       },
       {
         slug: 'cetaces',
