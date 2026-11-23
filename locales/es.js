@@ -120,6 +120,8 @@ const es = {
     eyebrow: 'Opiniones Google',
     title: '5,0 ⭐ · +100 opiniones Google',
     subtitle: 'Lo que dicen quienes han buceado con Paco.',
+    see_all: 'Ver las +100 opiniones de Google →',
+    leave: 'Dejar una opinión en Google',
     items: [
       { name: 'Julie Pérez', text: "Saqué mi PADI nivel 1 con Paco y fue una experiencia increíble. Whale Diving es una perfecta mezcla de amabilidad y profesionalidad. ¡Lo recomiendo totalmente!" },
       { name: 'Clément Ogor', text: "¡Paco es un monitor y guía de primera! Llevaba tiempo sin bucear y me puso en confianza rápidamente. 2 inmersiones realizadas, las 2 geniales. ¡A repetir!" },
@@ -158,7 +160,6 @@ const es = {
 
   footer: {
     review_cta: 'Dejar una opinión en Google',
-    tagline: 'Wild Well Dive',
     location: 'Saint-Gilles-les-Bains · Isla de la Reunión',
     links: [
       { label: 'Aviso legal', href: '/mentions-legales' },

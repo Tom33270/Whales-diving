@@ -27,15 +27,23 @@ export default function Reviews() {
           ))}
         </div>
 
-        {/* Lien vers Google */}
+        {/* Gros boutons vers la fiche Google */}
         <div className={styles.googleLink}>
           <a
             href="https://g.page/r/CdSyR55qdAJUEBE"
             target="_blank"
             rel="noopener noreferrer"
-            className={styles.googleBtn}
+            className={styles.bigBtn}
           >
-            Voir tous les avis sur Google →
+            {t('reviews.see_all')}
+          </a>
+          <a
+            href="https://g.page/r/CdSyR55qdAJUEBE/review"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`${styles.bigBtn} ${styles.bigBtn__review}`}
+          >
+            ⭐ {t('reviews.leave')}
           </a>
         </div>
       </div>

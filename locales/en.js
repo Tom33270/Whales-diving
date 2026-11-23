@@ -120,6 +120,8 @@ const en = {
     eyebrow: 'Google Reviews',
     title: '5.0 ⭐ · 100+ Google reviews',
     subtitle: 'What people who dived with Paco say.',
+    see_all: 'See all 100+ Google reviews →',
+    leave: 'Leave a Google review',
     items: [
       {
         name: 'Julie Pérez',
@@ -171,7 +173,6 @@ const en = {
 
   footer: {
     review_cta: 'Leave a Google review',
-    tagline: 'Wild Well Dive',
     location: 'Saint-Gilles-les-Bains · Réunion Island',
     links: [
       { label: 'Legal notice', href: '/mentions-legales' },

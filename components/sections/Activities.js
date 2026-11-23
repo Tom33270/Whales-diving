@@ -23,7 +23,17 @@ export default function Activities() {
                 <div className={styles.card__body}>
                   <h3 className={styles.card__title}>{item.title}</h3>
                   <p className={styles.card__desc}>{item.description}</p>
-                  <span className={styles.card__price}>{item.price}</span>
+                  <span className={styles.card__price}>
+                    {(() => {
+                      const m = String(item.price).match(/^(\D*?)\s*(€?\d.*)$/);
+                      return m ? (
+                        <>
+                          <span className={styles.card__priceFrom}>{m[1]}</span>
+                          <span className={styles.card__priceValue}>{m[2]}</span>
+                        </>
+                      ) : item.price;
+                    })()}
+                  </span>
                 </div>
                 <div className={styles.card__arrow}>→</div>
               </a>

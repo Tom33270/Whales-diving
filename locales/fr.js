@@ -173,6 +173,8 @@ La rencontre se fait à leur rythme, jamais au nôtre.`,
     eyebrow: 'Avis Google',
     title: '5,0 ⭐ · +100 avis Google',
     subtitle: 'Ce que disent ceux qui ont plongé avec Paco.',
+    see_all: 'Voir les +100 avis Google →',
+    leave: 'Laisser un avis Google',
     items: [
       {
         name: 'Julie Pérez',
@@ -233,7 +235,6 @@ Que ce soit pour un baptême, une sortie cétacés, une formation ou une plongé
   },
 
   footer: {
-    tagline: 'Wild Well Dive',
     location: 'Saint-Gilles-les-Bains · La Réunion',
     links: [
       { label: 'Mentions légales', href: '/mentions-legales' },
