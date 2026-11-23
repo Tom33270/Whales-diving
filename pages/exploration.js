@@ -71,7 +71,7 @@ export default function Exploration() {
 
         <section className={`${styles.pricing} ${styles.section__alt}`}>
           <div className={styles.container}>
-            <p className={styles.eyebrow}>Tarifs 2026</p>
+            <p className={styles.eyebrow}>Tarifs</p>
             <h2 className={styles.section__title}>Plongées & packs</h2>
             <div className={styles.pricing__table}>
               {[

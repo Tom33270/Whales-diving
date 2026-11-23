@@ -9,7 +9,6 @@ const en = {
   },
 
   hero: {
-    tagline: 'Wild Well Dive',
     title: 'Dive into\nthe extraordinary',
     subtitle:
       'Diving courses, guided exploration and whale-watching trips with a state-certified instructor. A private, tailor-made experience, far from mass tourism.',
@@ -20,8 +19,8 @@ const en = {
 
   stats: {
     rating: '5.0',
-    rating_label: 'Google reviews',
-    rating_count: '73 verified reviews',
+    rating_label: '100+ Google reviews',
+    rating_count: '',
     experience: '20+ years',
     experience_label: 'international experience',
     languages: '3 languages',
@@ -67,7 +66,7 @@ const en = {
   },
 
   pricing: {
-    eyebrow: 'Pricing 2026',
+    eyebrow: 'Pricing',
     title: 'Clear prices, all inclusive',
     subtitle: 'All prices are VAT included. No hidden fees.',
     note: 'Valid 2026 · Certification included in courses · Equipment provided',
@@ -83,7 +82,7 @@ const en = {
         title: '🤿 Discovery & First Dive',
         rows: [
           { label: 'Discovery dive · 30 min · 6m max', price: '€90' },
-          { label: 'First dive · 60 min · 6m max · counts as Level 1 first dive', price: '€110' },
+          { label: 'First dive · 60 min · 6m max · counts as the first dive of your PE12 or Level 1', price: '€110' },
         ],
       },
       {
@@ -119,7 +118,7 @@ const en = {
 
   reviews: {
     eyebrow: 'Google Reviews',
-    title: '5.0 ⭐ · 73 verified reviews',
+    title: '5.0 ⭐ · 100+ Google reviews',
     subtitle: 'What people who dived with Paco say.',
     items: [
       {
@@ -171,6 +170,7 @@ const en = {
   },
 
   footer: {
+    review_cta: 'Leave a Google review',
     tagline: 'Wild Well Dive',
     location: 'Saint-Gilles-les-Bains · Réunion Island',
     links: [

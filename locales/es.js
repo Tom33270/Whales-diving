@@ -9,7 +9,6 @@ const es = {
   },
 
   hero: {
-    tagline: 'Wild Well Dive',
     title: 'Sumérgete en\nlo extraordinario',
     subtitle:
       'Formaciones, exploración y avistamiento de cetáceos con un monitor titulado por el Estado. Una experiencia privada y personalizada, lejos del turismo masivo.',
@@ -20,8 +19,8 @@ const es = {
 
   stats: {
     rating: '5.0',
-    rating_label: 'opiniones Google',
-    rating_count: '73 opiniones verificadas',
+    rating_label: '+100 opiniones Google',
+    rating_count: '',
     experience: '+20 años',
     experience_label: 'de experiencia internacional',
     languages: '3 idiomas',
@@ -67,7 +66,7 @@ const es = {
   },
 
   pricing: {
-    eyebrow: 'Precios 2026',
+    eyebrow: 'Precios',
     title: 'Precios claros, todo incluido',
     subtitle: 'Todos los precios incluyen IVA. Sin costes ocultos.',
     note: 'Válido en 2026 · Certificación incluida en formaciones · Material proporcionado',
@@ -119,7 +118,7 @@ const es = {
 
   reviews: {
     eyebrow: 'Opiniones Google',
-    title: '5.0 ⭐ · 73 opiniones verificadas',
+    title: '5,0 ⭐ · +100 opiniones Google',
     subtitle: 'Lo que dicen quienes han buceado con Paco.',
     items: [
       { name: 'Julie Pérez', text: "Saqué mi PADI nivel 1 con Paco y fue una experiencia increíble. Whale Diving es una perfecta mezcla de amabilidad y profesionalidad. ¡Lo recomiendo totalmente!" },
@@ -158,6 +157,7 @@ const es = {
   },
 
   footer: {
+    review_cta: 'Dejar una opinión en Google',
     tagline: 'Wild Well Dive',
     location: 'Saint-Gilles-les-Bains · Isla de la Reunión',
     links: [

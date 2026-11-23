@@ -103,7 +103,7 @@ export default function Formations() {
 
         <section className={styles.section__alt}>
           <div className={styles.container}>
-            <p className={styles.eyebrow}>Tarifs 2026</p>
+            <p className={styles.eyebrow}>Tarifs</p>
             <h2 className={styles.section__title}>Choisissez votre formation</h2>
             <div className={styles.formationTabs}>
               {formations.map(f => (

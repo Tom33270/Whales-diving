@@ -45,7 +45,7 @@ export default function BaptemeInitiation() {
                 <h2 className={styles.section__title}>Une découverte en toute sécurité</h2>
                 <p className={styles.text}>Le baptême de plongée, c'est votre première immersion dans le monde sous-marin. En moins d'une heure, Paco vous emmène à 6 mètres de profondeur découvrir les récifs coralliens de Saint-Gilles-les-Bains.</p>
                 <p className={styles.text}>Aucune expérience n'est requise. Paco s'adapte à votre rythme, à votre niveau de confort et à vos envies. L'objectif : que vous repartiez avec le sourire et l'envie de recommencer.</p>
-                <p className={styles.text}>L'initiation est une alternative au baptême — plus longue (60 min), elle vous permet de valider officiellement votre première plongée de Niveau 1 si vous souhaitez continuer vers une certification.</p>
+                <p className={styles.text}>L'initiation est une alternative au baptême — plus longue (60 min), elle vous permet de poursuivre vers une certification si vous le souhaitez. L'initiation compte comme la 1re plongée de votre PE12 ou de votre Niveau 1.</p>
               </div>
               <div className={styles.intro__highlights}>
                 <div className={styles.highlight}>
@@ -71,7 +71,7 @@ export default function BaptemeInitiation() {
 
         <section className={`${styles.pricing} ${styles.section__alt}`}>
           <div className={styles.container}>
-            <p className={styles.eyebrow}>Tarifs 2026</p>
+            <p className={styles.eyebrow}>Tarifs</p>
             <h2 className={styles.section__title}>Formules baptême</h2>
             <div className={styles.pricing__grid}>
               <div className={styles.pricing__card}>
@@ -99,7 +99,7 @@ export default function BaptemeInitiation() {
                   <li>✓ Profondeur max 6m</li>
                   <li>✓ Matériel complet fourni</li>
                   <li>✓ Briefing sécurité inclus</li>
-                  <li>✓ Valide la 1ère plongée N1</li>
+                  <li>✓ Compte comme la 1re plongée de votre PE12 ou de votre Niveau 1</li>
                   <li>✓ Plonger à 2 possible</li>
                 </ul>
                 <a href={contact.whatsapp_url} target="_blank" rel="noopener noreferrer" className={`${styles.btn} ${styles.btn__primary}`}onClick={() => window.gtag_report_conversion('https://wa.me/262693873336')}>Réserver</a>

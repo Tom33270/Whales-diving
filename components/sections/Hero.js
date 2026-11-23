@@ -9,7 +9,6 @@ export default function Hero() {
       <div className={styles.overlay} />
       <div className={styles.bg} />
       <div className={styles.content}>
-        <p className={styles.tagline}>{t('hero.tagline')}</p>
         <h1 className={styles.title}>
           {t('hero.title').split('\n').map((line, i) => (
             <span key={i}>{line}<br /></span>

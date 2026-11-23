@@ -23,8 +23,8 @@ const content = {
   //  STATISTIQUES (bandeau sous le hero)
   // ----------------------------------------------------------
   stats: {
-    note_google:   '5.0',
-    nombre_avis:   '+80',
+    note_google:   '5,0',
+    nombre_avis:   '+100',
     experience:    '+20 ans',
     langues:       '3 langues',
     groupe_max:    '6 pers. max',

@@ -9,19 +9,18 @@ const fr = {
   },
 
   hero: {
-    tagline: 'Wild Well Dive',
     title: 'Plongez dans\nl\'extraordinaire',
     subtitle:
-      `Vivez des expériences uniques : découverte de la plongée, sorties cétacés avec mise à l'eau et formations, encadrées par un moniteur diplômé d'État passionné`,
+      `Centre de plongée à Saint-Gilles-les-Bains : baptêmes, formations et sorties dauphins avec un moniteur diplômé d'État.`,
     cta_call: 'Appeler Paco',
     cta_instagram: 'Instagram',
     location: 'Saint-Gilles-les-Bains · La Réunion',
   },
 
   stats: {
-    rating: '5.0',
-    rating_label: 'avis Google',
-    rating_count: '+80 avis vérifiés',
+    rating: '5,0',
+    rating_label: '+100 avis Google',
+    rating_count: '',
     experience: '+20 ans',
     experience_label: "d'expérience internationale",
     languages: '3 langues',
@@ -67,7 +66,7 @@ const fr = {
   },
 
   pricing: {
-    eyebrow: 'Tarifs 2026',
+    eyebrow: 'Tarifs',
     title: 'Des prix clairs, tout compris',
     subtitle: `Tous les tarifs sont indiqués TTC. Matériel fourni selon l'activité.`,
     note1:'* Pour toutes autres formations ou spécialité - sur demande',
@@ -84,7 +83,7 @@ const fr = {
         title: 'Baptême & Initiation',
         rows: [
           { label: 'Baptême · 30 min · 6m max · Découverte de la plongée', price: '90€' },
-          { label: "Initiation · 60 min · 6m max · Valide la 1ère plongée du N1 · alternative au baptême", price: '120€' },
+          { label: "Initiation · 60 min · 6m max · alternative au baptême · compte comme la 1re plongée de votre PE12 ou de votre Niveau 1", price: '120€' },
         ],
       },
       {
@@ -172,7 +171,7 @@ La rencontre se fait à leur rythme, jamais au nôtre.`,
 
   reviews: {
     eyebrow: 'Avis Google',
-    title: '5.0 ⭐ · +80 avis vérifiés',
+    title: '5,0 ⭐ · +100 avis Google',
     subtitle: 'Ce que disent ceux qui ont plongé avec Paco.',
     items: [
       {
@@ -205,7 +204,7 @@ Pendant 15 ans, j'ai construit une carrière internationale en exerçant dans pl
 
 Aux Philippines, j'ai créé mon propre centre de plongée. Ce projet a ensuite évolué pour devenir Ocean Farmers, une ONG dédiée à la plantation de coraux et à la réhabilitation des récifs coralliens. Cette aventure a renforcé ma conviction que la plongée doit aussi contribuer à la protection du milieu marin.
 
-Il y a 5 ans, j'ai choisi de revenir sur mon île natale pour créer Whale Diving, avec une philosophie simple : proposer des expériences authentiques, en petits groupes, loin du tourisme de masse, où la qualité, la sécurité et le respect de l'océan sont toujours prioritaires.
+En 2020, j'ai choisi de revenir sur mon île natale pour créer Whale Diving, avec une philosophie simple : proposer des expériences authentiques, en petits groupes, loin du tourisme de masse, où la qualité, la sécurité et le respect de l'océan sont toujours prioritaires.
 
 Que ce soit pour un baptême, une sortie cétacés, une formation ou une plongée d'exploration, chaque sortie est pensée pour s'adapter à votre niveau, à vos envies et à votre rythme.`,
     credentials: [
@@ -215,9 +214,9 @@ Que ce soit pour un baptême, une sortie cétacés, une formation ou une plongé
       'Plus de 20 ans d\'expérience — France, Philippines, international',
       `Fondateur d'un centre de plongée aux Philippines, devenu l'ONG Ocean Farmers, spécialisée dans la restauration des récifs coralliens`,
       'Permis bateau côtier',
-      'Premier Secours E1 secouriste à jour',
+      'Secourisme PSE1 à jour',
       `Formation à l'observation responsable des cétacés (CEDTM)`,
-      'Assurance Responsabilité Civil professionnelle',
+      'Assurance Responsabilité Civile professionnelle',
     ],
     languages: 'Français · English · Español',
   },
@@ -241,6 +240,7 @@ Que ce soit pour un baptême, une sortie cétacés, une formation ou une plongé
       { label: 'CGV', href: '/cgv' },
       { label: 'Politique de confidentialité', href: '/politique-confidentialite' },
     ],
+    review_cta: 'Laisser un avis Google',
     copyright: '© 2026 Whale Diving. Tous droits réservés.',
   },
 };

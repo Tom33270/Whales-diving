@@ -16,6 +16,14 @@ export default function Footer() {
           <a href="mailto:whalediving.re@gmail.com" className={styles.email}>
             whalediving.re@gmail.com
           </a>
+          <a
+            href="https://g.page/r/CdSyR55qdAJUEBE/review"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.reviewBtn}
+          >
+            ⭐ {t('footer.review_cta')}
+          </a>
         </div>
 
         <div className={styles.social}>
