@@ -1,5 +1,6 @@
 import { useLang } from '../../context/LangContext';
 import styles from '../../styles/Hero.module.css';
+import AnimatedLogo from './AnimatedLogo';
 
 export default function Hero() {
   const { t } = useLang();
@@ -48,7 +49,9 @@ export default function Hero() {
         </div>
         <p className={styles.location}>📍 {t('hero.location')}</p>
       </div>
-       <img src="/images/logo-societe.png" alt="Whale Diving" className={styles.logoSociete} />
+      <div className={styles.logoAnime}>
+        <AnimatedLogo />
+      </div>
       <div className={styles.scrollIndicator}>
         <div className={styles.scrollDot} />
       </div>
