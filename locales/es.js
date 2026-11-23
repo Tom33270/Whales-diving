@@ -200,7 +200,7 @@ El encuentro se hace a su ritmo, nunca al nuestro.`,
     eyebrow: 'El monitor',
     title: 'Paco',
     quote: `«El verdadero lujo hoy es la calma, la calidad de la experiencia y el respeto por el océano.»`,
-    bio: `Me llamo François, pero todo el mundo me llama Paco. Originario de La Reunión, soy monitor de buceo titulado de Estado (DEJEPS) y PADI Master Scuba Diver Trainer (MSDT).
+    bio: `Me llamo François, pero todo el mundo me llama Paco. Originario de La Reunión, soy monitor de buceo titulado de Estado E3 (DEJEPS) y PADI Master Scuba Diver Trainer (MSDT).
 
 Durante 15 años construí una carrera internacional trabajando en algunos de los destinos más bonitos del mundo, entre ellos México, Filipinas y Tailandia. Estas experiencias me permitieron acompañar a buceadores de todo tipo y adquirir una visión internacional del buceo.
 

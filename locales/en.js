@@ -200,7 +200,7 @@ The encounter happens at their pace, never ours.`,
     eyebrow: 'The instructor',
     title: 'Paco',
     quote: `"True luxury today is calm, the quality of the experience and respect for the ocean."`,
-    bio: `My name is François, but everyone calls me Paco. Born in Réunion Island, I am a state-certified diving instructor (DEJEPS) and a PADI Master Scuba Diver Trainer (MSDT).
+    bio: `My name is François, but everyone calls me Paco. Born in Réunion Island, I am a state-certified E3 diving instructor (DEJEPS) and a PADI Master Scuba Diver Trainer (MSDT).
 
 For 15 years I built an international career working in some of the most beautiful destinations in the world, including Mexico, the Philippines and Thailand. These experiences let me guide divers from all backgrounds and gain an international view of diving.
 

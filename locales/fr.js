@@ -200,7 +200,7 @@ La rencontre se fait à leur rythme, jamais au nôtre.`,
     eyebrow: 'Le moniteur',
     title: 'Paco',
     quote: `«Le vrai luxe aujourd'hui, c'est le calme, la qualité de l'expérience et le respect de l'océan.  »`,
-    bio: `Je m'appelle François, mais tout le monde m'appelle Paco. Originaire de La Réunion, je suis moniteur de plongée diplômé d'État (DEJEPS) et PADI Master Scuba Diver Trainer (MSDT).
+    bio: `Je m'appelle François, mais tout le monde m'appelle Paco. Originaire de La Réunion, je suis moniteur de plongée diplômé d'État E3 (DEJEPS) et PADI Master Scuba Diver Trainer (MSDT).
 
 Pendant 15 ans, j'ai construit une carrière internationale en exerçant dans plusieurs destinations parmi les plus belles au monde, notamment au Mexique, aux Philippines et en Thaïlande. Ces expériences m'ont permis d'accompagner des plongeurs de tous horizons et d'acquérir une vision internationale de la plongée.
 

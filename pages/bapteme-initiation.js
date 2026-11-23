@@ -62,7 +62,7 @@ export default function BaptemeInitiation() {
                 </div>
                 <div className={styles.highlight}>
                   <span className={styles.highlight__icon}>🎓</span>
-                  <div><strong>Moniteur DEJEPS</strong><p>Diplôme d'État niveau 5</p></div>
+                  <div><strong>Moniteur DEJEPS</strong><p>Diplôme d'État E3</p></div>
                 </div>
                 <div className={styles.highlight}>
                   <span className={styles.highlight__icon}>🛡️</span>

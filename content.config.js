@@ -93,7 +93,7 @@ const content = {
     surnom:   'Paco',
     citation: "« Le vrai luxe aujourd'hui, c'est le calme et la qualité de l'expérience. »",
     bio: [
-      `Je m'appelle François, mais tout le monde m'appelle Paco. Originaire de La Réunion, je suis moniteur de plongée diplômé d'État (DEJEPS) et PADI Master Scuba Diver Trainer (MSDT).
+      `Je m'appelle François, mais tout le monde m'appelle Paco. Originaire de La Réunion, je suis moniteur de plongée diplômé d'État E3 (DEJEPS) et PADI Master Scuba Diver Trainer (MSDT).
 
 Pendant 15 ans, j'ai construit une carrière internationale en exerçant dans plusieurs destinations parmi les plus belles au monde, notamment au Mexique, aux Philippines et en Thaïlande. Ces expériences m'ont permis d'accompagner des plongeurs de tous horizons et d'acquérir une vision internationale de la plongée.
 
@@ -104,7 +104,7 @@ Il y a 5 ans, j'ai choisi de revenir sur mon île natale pour créer Whale Divin
 Que ce soit pour un baptême, une sortie cétacés, une formation ou une plongée d'exploration, chaque sortie est pensée pour s'adapter à votre niveau, à vos envies et à votre rythme.`,
     ],
     diplomes: [
-      "DEJEPS Plongée sous-marine — Diplôme d'État niveau 5",
+      "DEJEPS Plongée sous-marine — Diplôme d'État E3",
       "Certifié ANMP et SDI/TDI (reconnaissance internationale)",
       "Plus de 20 ans d'expérience — France, Philippines, international",
       "Permis bateau côtier et hauturier",
