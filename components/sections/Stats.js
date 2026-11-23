@@ -27,16 +27,13 @@ export default function Stats() {
     {
       value: t('stats.experience'),
       label: t('stats.experience_label'),
-      // Masque de plongée + tuba sortant de l'eau
+      // Globe, avec un petit point rose sur La Réunion
       icon: (
         <svg {...common}>
-          <rect x="11" y="21" width="20" height="11" rx="5" stroke={W} strokeWidth="1.4" />
-          <path d="M21 21v11" stroke={W} strokeWidth="1.2" />
-          <path d="M31 25c3 0 4 1.5 4 3" stroke={W} strokeWidth="1.2" strokeLinecap="round" />
-          <path d="M30 22l5-10c.7-1.4 2.6-1.4 3.2-.3" stroke={W} strokeWidth="1.4" strokeLinecap="round" />
-          <path d="M6 37c2-1.6 4-1.6 6 0s4 1.6 6 0 4-1.6 6 0 4 1.6 6 0 4-1.6 6 0" stroke={PINK} strokeWidth="1.4" strokeLinecap="round" />
-          <circle cx="15" cy="15" r="1.3" stroke={PINK} strokeWidth="1" />
-          <circle cx="20" cy="11" r="1" stroke={PINK} strokeWidth="1" />
+          <circle cx="24" cy="24" r="15" stroke={W} strokeWidth="1.4" />
+          <ellipse cx="24" cy="24" rx="6.5" ry="15" stroke={W} strokeWidth="1.2" />
+          <path d="M9 24h30M11 17h26M11 31h26" stroke="rgba(255,255,255,0.55)" strokeWidth="1" />
+          <circle cx="33" cy="15" r="3" stroke={PINK} strokeWidth="1.4" fill="rgba(238,46,96,0.25)" />
         </svg>
       ),
     },
