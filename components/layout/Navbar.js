@@ -52,20 +52,23 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* Droite : langue + CTA */}
+        {/* Langue : toujours visible, sur ordinateur comme sur téléphone */}
+        <div className={styles.langTop} role="group" aria-label="Langue / Language / Idioma">
+          {LANGS.map((l) => (
+            <button
+              key={l.code}
+              onClick={() => setLang(l.code)}
+              className={`${styles.langPill} ${lang === l.code ? styles.langPill__active : ''}`}
+              title={l.label}
+              aria-pressed={lang === l.code}
+            >
+              {l.code.toUpperCase()}
+            </button>
+          ))}
+        </div>
+
+        {/* Droite : CTA */}
         <div className={styles.right}>
-          <div className={styles.langSwitcher}>
-            {LANGS.map((l) => (
-              <button
-                key={l.code}
-                onClick={() => setLang(l.code)}
-                className={`${styles.langBtn} ${lang === l.code ? styles.langBtn__active : ''}`}
-                title={l.label}
-              >
-                <img src={l.flag} alt={l.label} className={styles.langFlag} />
-              </button>
-            ))}
-          </div>
           <a href="tel:+262693873336" className={styles.ctaBtn}>
             {t('nav.contact')}
           </a>
@@ -96,18 +99,6 @@ export default function Navbar() {
               {l.label}
             </a>
           ))}
-          <div className={styles.mobileLang}>
-            {LANGS.map((l) => (
-              <button
-                key={l.code}
-                onClick={() => { setLang(l.code); setMenuOpen(false); }}
-                className={`${styles.langBtn} ${lang === l.code ? styles.langBtn__active : ''}`}
-                title={l.label}
-              >
-                <img src={l.flag} alt={l.label} className={styles.langFlag} />
-              </button>
-            ))}
-          </div>
           <a href="tel:+262693873336" className={styles.mobileCta}>
             📞 Appeler Paco
           </a>
