@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { useLang } from '../../context/LangContext';
+import AnimatedLogo from '../sections/AnimatedLogo';
 import styles from '../../styles/Footer.module.css';
 
 export default function Footer() {
@@ -10,7 +11,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.inner}>
         <div className={styles.brand}>
-          <div className={styles.badge}><img src="/images/logo-animation.png" alt="Whale Diving"/></div>
+          <div className={styles.badge} aria-label="Whale Diving"><AnimatedLogo showHud={false} /></div>
           <p className={styles.location}>📍 {t('footer.location')}</p>
           <a
             href="https://g.page/r/CdSyR55qdAJUEBE/review"

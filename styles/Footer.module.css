@@ -20,17 +20,11 @@
   gap: 0.5rem;
 }
 
+/* Logo animé en petit, sans cadre blanc */
 .badge {
   align-self: flex-start;
-  background: rgba(255, 255, 255, 0.92);
-  border-radius: 14px;
-  padding: 0.5rem 0.9rem;
-}
-
-.badge img {
-  height: 84px;
-  width: auto;
-  object-fit: contain;
+  width: 150px;
+  margin: -0.5rem 0 -0.25rem -0.75rem;
 }
 
 .tagline {

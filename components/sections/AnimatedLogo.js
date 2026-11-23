@@ -8,7 +8,7 @@ import styles from '../../styles/AnimatedLogo.module.css';
  * La Réunion · Saint-Gilles · Cap La Houssaye.
  * Image utilisée : /public/images/logo-animation.png (fond transparent).
  */
-export default function AnimatedLogo({ className = '' }) {
+export default function AnimatedLogo({ className = '', showHud = true }) {
   const hostRef = useRef(null);
   const plogoRef = useRef(null);
   const linesRef = useRef(null);
@@ -132,7 +132,7 @@ export default function AnimatedLogo({ className = '' }) {
     // lignes fines entre les points, crochets, coordonnées GPS qui défilent et nom du lieu dessous
     function hud(t){
       lx.clearRect(0, 0, W, H);
-      if (T.length < 2) return;
+      if (!showHud || T.length < 2) return;   // version compacte (pied de page) : sans les points GPS
       const fs = W < 700 ? 9 : 11, pts = T.map(p => pos(p, t));
       lx.textBaseline = "middle"; lx.lineWidth = 1;
       const ink = a => `rgba(13,33,55,${a})`;   // texte et lignes en bleu nuit
