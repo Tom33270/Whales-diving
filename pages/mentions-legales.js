@@ -34,7 +34,7 @@ export default function MentionsLegales() {
             <h2 className={styles.heading}>Activité</h2>
             <p>Whale Diving est un centre de plongée sous-marine proposant des baptêmes, formations, explorations et sorties cétacés à La Réunion.</p>
             <p>Moniteur diplômé d'État E3 — DEJEPS Plongée sous-marine</p>
-            <p>Certifications : ANMP · SDI/TDI</p>
+            <p>Formations délivrées : ANMP · Moniteur PADI, SDI et TDI</p>
             <p>Assurance RC professionnelle : Aqua Med / MHW — couverture 5 M€</p>
           </section>
 

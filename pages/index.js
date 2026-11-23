@@ -6,8 +6,8 @@ export default function IndexPage() {
     <>
       <Head>
         <title>Whale Diving | Centre de plongée à Saint-Gilles-les-Bains — La Réunion</title>
-        <meta name="description" content="Centre de plongée à La Réunion. Baptêmes, formations N1/N2/PADI, explorations et sorties baleines & dauphins avec Paco, moniteur DEJEPS. 5★ · +100 avis Google · Saint-Gilles-les-Bains." />
-        <meta name="keywords" content="plongée La Réunion, centre de plongée Saint-Gilles, baptême plongée Réunion, formation plongée Réunion, sortie baleines Réunion, dauphins Réunion, PADI Réunion, moniteur plongée Réunion" />
+        <meta name="description" content="Centre de plongée à La Réunion. Baptêmes, formations ANMP N1/N2, explorations et sorties baleines & dauphins avec Paco, moniteur DEJEPS. 5★ · +100 avis Google · Saint-Gilles-les-Bains." />
+        <meta name="keywords" content="plongée La Réunion, centre de plongée Saint-Gilles, baptême plongée Réunion, formation plongée Réunion, sortie baleines Réunion, dauphins Réunion, formation ANMP Réunion, moniteur plongée Réunion" />
         <meta property="og:title" content="Whale Diving | Centre de plongée — La Réunion" />
         <meta property="og:description" content="Baptêmes, formations et sorties cétacés avec Paco — moniteur DEJEPS. Saint-Gilles-les-Bains, La Réunion. 5★ +100 avis Google." />
         <meta property="og:url" content="https://www.whale-diving.re" />

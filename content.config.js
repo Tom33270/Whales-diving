@@ -105,7 +105,7 @@ Que ce soit pour un baptême, une sortie cétacés, une formation ou une plongé
     ],
     diplomes: [
       "DEJEPS Plongée sous-marine — Diplôme d'État E3",
-      "Certifié ANMP et SDI/TDI (reconnaissance internationale)",
+      "Moniteur PADI (MSDT), SDI et TDI",
       "Plus de 20 ans d'expérience — France, Philippines, international",
       "Permis bateau côtier et hauturier",
       "PSE1 secouriste à jour (2026)",

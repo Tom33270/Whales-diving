@@ -212,6 +212,7 @@ Whether it is a first dive, a cetacean trip, a course or an exploration dive, ev
     credentials: [
       'DEJEPS Scuba Diving — State Diploma, Level E3',
       'PADI Master Scuba Diver Trainer (MSDT)',
+      'SDI and TDI instructor',
       'ANMP instructor and trainer – internationally recognised certifications',
       '20+ years of experience — France, Philippines, international',
       'Founder of a dive centre in the Philippines, which became the NGO Ocean Farmers, specialised in coral reef restoration',

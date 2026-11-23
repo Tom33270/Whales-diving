@@ -128,3 +128,33 @@
   background: #d1204f;
   transform: translateY(-2px);
 }
+
+/* Téléphone et WhatsApp : même numéro, une seule ligne */
+.phoneRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.waChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #128C7E 0%, #25D366 50%, #128C7E 100%);
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.waChip svg {
+  width: 14px;
+  height: 14px;
+}
+
+.waChip:hover {
+  filter: brightness(1.1);
+}

@@ -138,3 +138,156 @@
     margin: 0 auto;
   }
 }
+/* ── CV visuel ─────────────────────────────────────────── */
+.intro {
+  font-size: 1.12rem;
+  font-weight: 600;
+  color: var(--color-navy);
+  line-height: 1.5;
+  margin-bottom: 1.75rem;
+}
+
+.blockTitle {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-teal);
+  margin: 0 0 0.9rem;
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 21px;
+  top: 10px;
+  bottom: 10px;
+  width: 2px;
+  background: linear-gradient(#00B5B5, #EE2E60);
+  opacity: 0.5;
+}
+
+.step {
+  position: relative;
+  display: flex;
+  gap: 0.9rem;
+  align-items: flex-start;
+  padding: 0.45rem 0;
+}
+
+.step__icon {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid rgba(0, 181, 181, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.step div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding-top: 0.3rem;
+}
+
+.step strong {
+  color: var(--color-navy);
+  font-size: 1rem;
+}
+
+.step__text {
+  color: var(--color-grey);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.step__flags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.flag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.6rem 0.2rem 0.25rem;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid rgba(13, 33, 55, 0.1);
+  font-size: 0.82rem;
+  color: var(--color-navy);
+}
+
+.flag img {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.values {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.value {
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(238, 46, 96, 0.1);
+  color: #c41d4b;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.creds {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.6rem;
+}
+
+.credTile {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.85rem;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid rgba(13, 33, 55, 0.08);
+}
+
+.credTile__icon {
+  font-size: 1.4rem;
+  margin-bottom: 0.2rem;
+}
+
+.credTile strong {
+  color: var(--color-navy);
+  font-size: 0.95rem;
+}
+
+.credTile span:last-child {
+  color: var(--color-grey);
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
+
+@media (max-width: 1100px) {
+  .creds { grid-template-columns: repeat(2, 1fr); }
+}

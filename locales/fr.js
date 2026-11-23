@@ -212,6 +212,7 @@ Que ce soit pour un baptême, une sortie cétacés, une formation ou une plongé
     credentials: [
       'DEJEPS Plongée sous-marine — Diplôme d\'État E3',
       `PADI Master Scuba Diver Trainer (MSDT)`,
+      `Moniteur SDI et TDI`,
       `Moniteur et formateur ANMP – Certifications reconnues à l'international`,
       'Plus de 20 ans d\'expérience — France, Philippines, international',
       `Fondateur d'un centre de plongée aux Philippines, devenu l'ONG Ocean Farmers, spécialisée dans la restauration des récifs coralliens`,

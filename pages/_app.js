@@ -118,7 +118,7 @@ export default function App({ Component, pageProps }) {
                     "itemOffered": {
                       "@type": "Service",
                       "name": "Formation plongée",
-                      "description": "Formations N1, N2, PE40, PA20, Nitrox — certifications ANMP et PADI"
+                      "description": "Formations N1, N2, PE40, PA20, Nitrox — certifications ANMP"
                     },
                     "price": "260",
                     "priceCurrency": "EUR"

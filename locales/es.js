@@ -212,6 +212,7 @@ Ya sea un bautismo, una salida con cetáceos, una formación o una inmersión de
     credentials: [
       'DEJEPS Buceo — Diploma de Estado E3',
       'PADI Master Scuba Diver Trainer (MSDT)',
+      'Monitor SDI y TDI',
       'Monitor y formador ANMP – certificaciones reconocidas internacionalmente',
       'Más de 20 años de experiencia — Francia, Filipinas, internacional',
       'Fundador de un centro de buceo en Filipinas, convertido en la ONG Ocean Farmers, especializada en la restauración de arrecifes de coral',
