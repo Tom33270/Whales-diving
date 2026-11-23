@@ -12,13 +12,12 @@ export default function Exploration() {
     <>
       <Head>
         <title>Plongées d'exploration à La Réunion — Whale Diving</title>
-        <meta name="description" content="Explorez les fonds sous-marins de Saint-Gilles-les-Bains avec Paco. Tortues, coraux, raies — dès 60€ la plongée. Petits groupes, moniteur DEJEPS." />
+        <meta name="description" content="Explorez les fonds sous-marins de Saint-Gilles-les-Bains avec Paco. Tortues, coraux, raies — dès 65€ la plongée. Petits groupes, moniteur DEJEPS." />
         <meta property="og:title" content="Exploration encadrée — Whale Diving La Réunion" />
-        <meta property="og:description" content="Plongées d'exploration sur les plus beaux spots de La Réunion. À partir de 60€." />
+        <meta property="og:description" content="Plongées d'exploration sur les plus beaux spots de La Réunion. À partir de 65€." />
         <meta property="og:url" content="https://www.whale-diving.re/exploration" />
         <meta property="og:image" content="https://www.whale-diving.re/images/exploration.jpg" />
         <link rel="canonical" href="https://www.whale-diving.re/exploration" />
-        <meta name="description" content="Plongées d'exploration sur les spots de Saint-Gilles-les-Bains. À partir de 60€ la plongée. Packs 3, 6 ou 10 plongées disponibles. Moniteur DEJEPS." />
       </Head>
 
       <Navbar />
@@ -43,9 +42,14 @@ export default function Exploration() {
             <div className={styles.intro__grid}>
               <div>
                 <h2 className={styles.section__title}>Explorez les récifs de La Réunion</h2>
-                <p className={styles.text}>Saint-Gilles-les-Bains est l'un des rares endroits à La Réunion où la plongée est praticable toute l'année. Ses fonds abritent une biodiversité exceptionnelle : tortues marines, raies pastenagues, murènes, bancs de poissons tropicaux et coraux remarquablement préservés.</p>
-                <p className={styles.text}>Avec Paco, chaque sortie est construite autour de votre niveau et de vos envies. Il connaît les spots sur le bout des doigts et sait toujours où trouver la vie marine la plus spectaculaire.</p>
-                <p className={styles.text}>Les packs multi-plongées vous permettent de progresser à votre rythme tout en réalisant des économies significatives.</p>
+                <p className={styles.lead}>Plongez toute l'année sur les plus beaux sites de Saint-Gilles-les-Bains.</p>
+                <ul className={styles.points}>
+                  <li><span className={styles.points__icon}>🐢</span><span><strong>Tortues, raies, murènes,</strong> bancs de poissons tropicaux, coraux</span></li>
+                  <li><span className={styles.points__icon}>📅</span><span><strong>Toute l'année :</strong> l'un des rares coins de l'île plongeable en toute saison</span></li>
+                  <li><span className={styles.points__icon}>🎯</span><span><strong>Sur mesure :</strong> sites choisis selon votre niveau et vos envies</span></li>
+                  <li><span className={styles.points__icon}>🧭</span><span><strong>Paco connaît chaque site</strong> et où trouver la vie marine</span></li>
+                  <li><span className={styles.points__icon}>💳</span><span><strong>Packs 3, 6 ou 10 plongées :</strong> moins cher par plongée</span></li>
+                </ul>
               </div>
               <div className={styles.intro__highlights}>
                 <div className={styles.highlight}>

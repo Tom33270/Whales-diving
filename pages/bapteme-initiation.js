@@ -12,13 +12,12 @@ export default function BaptemeInitiation() {
     <>
       <Head>
         <title>Baptême & Initiation à la plongée — Whale Diving La Réunion</title>
-        <meta name="description" content="Découvrez la plongée sous-marine à La Réunion avec Paco, moniteur DEJEPS. Baptême dès 90€, initiation dès 110€. Dès 8 ans, Saint-Gilles-les-Bains." />
+        <meta name="description" content="Découvrez la plongée sous-marine à La Réunion avec Paco, moniteur DEJEPS. Baptême dès 90€, initiation 120€. Dès 8 ans, Saint-Gilles-les-Bains." />
         <meta property="og:title" content="Baptême & Initiation — Whale Diving La Réunion" />
         <meta property="og:description" content="Votre première plongée à La Réunion avec un moniteur diplômé d'État. Dès 90€." />
         <meta property="og:url" content="https://www.whale-diving.re/bapteme-initiation" />
         <meta property="og:image" content="https://www.whale-diving.re/images/bapteme-initiation.jpg" />
         <link rel="canonical" href="https://www.whale-diving.re/bapteme-initiation" />
-        <meta name="description" content="Découvrez la plongée sous-marine à Saint-Gilles-les-Bains avec Paco, moniteur DEJEPS. Baptême dès 90€, initiation dès 110€. Petits groupes, encadrement privé." />
       </Head>
 
       <Navbar />
@@ -43,9 +42,14 @@ export default function BaptemeInitiation() {
             <div className={styles.intro__grid}>
               <div>
                 <h2 className={styles.section__title}>Une découverte en toute sécurité</h2>
-                <p className={styles.text}>Le baptême de plongée, c'est votre première immersion dans le monde sous-marin. En moins d'une heure, Paco vous emmène à 6 mètres de profondeur découvrir les récifs coralliens de Saint-Gilles-les-Bains.</p>
-                <p className={styles.text}>Aucune expérience n'est requise. Paco s'adapte à votre rythme, à votre niveau de confort et à vos envies. L'objectif : que vous repartiez avec le sourire et l'envie de recommencer.</p>
-                <p className={styles.text}>L'initiation est une alternative au baptême — plus longue (60 min), elle vous permet de poursuivre vers une certification si vous le souhaitez. L'initiation compte comme la 1re plongée de votre PE12 ou de votre Niveau 1.</p>
+                <p className={styles.lead}>Votre première plongée, sans aucune expérience, avec Paco à vos côtés.</p>
+                <ul className={styles.points}>
+                  <li><span className={styles.points__icon}>🤿</span><span><strong>Baptême :</strong> 30 min sous l'eau, 6 m max</span></li>
+                  <li><span className={styles.points__icon}>⏱️</span><span><strong>Initiation :</strong> 60 min, plus de temps pour profiter</span></li>
+                  <li><span className={styles.points__icon}>🎓</span><span><strong>L'initiation compte</strong> comme la 1re plongée de votre PE12 ou de votre Niveau 1</span></li>
+                  <li><span className={styles.points__icon}>🐠</span><span><strong>Les récifs coralliens</strong> de Saint-Gilles-les-Bains</span></li>
+                  <li><span className={styles.points__icon}>😊</span><span><strong>À votre rythme :</strong> Paco s'adapte à votre confort</span></li>
+                </ul>
               </div>
               <div className={styles.intro__highlights}>
                 <div className={styles.highlight}>

@@ -18,7 +18,6 @@ export default function Cetaces() {
         <meta property="og:url" content="https://www.whale-diving.re/cetaces" />
         <meta property="og:image" content="https://www.whale-diving.re/images/cetaces.jpg" />
         <link rel="canonical" href="https://www.whale-diving.re/cetaces" />
-        <meta name="description" content="Sorties dauphins et baleines à La Réunion avec Paco. Haute saison baleines juillet–septembre. Protocole CAP respecté." />
       </Head>
 
       <Navbar />
@@ -43,9 +42,14 @@ export default function Cetaces() {
             <div className={styles.intro__grid}>
               <div>
                 <h2 className={styles.section__title}>Une rencontre unique, dans le respect</h2>
-                <p className={styles.text}>La Réunion est l'un des rares endroits au monde où il est possible de nager avec les baleines à bosse dans leurs eaux naturelles. Chaque été austral ({saison_cetaces.mois_debut} à {saison_cetaces.mois_fin}), ces géants des mers font escale au large de Saint-Gilles pour mettre bas et se reproduire.</p>
-                <p className={styles.text}>Les dauphins spinners sont présents toute l'année dans le lagon et au large. Dociles et curieux, ils accompagnent souvent le bateau sur de longues distances.</p>
-                <p className={styles.text}>Paco est titulaire de l'attestation d'observation des cétacés délivrée par le CEDTM. Chaque sortie est conduite dans le strict respect du protocole CAP.</p>
+                <p className={styles.lead}>Les dauphins toute l'année, les baleines à bosse de {saison_cetaces.mois_debut} à {saison_cetaces.mois_fin}.</p>
+                <ul className={styles.points}>
+                  <li><span className={styles.points__icon}>🐋</span><span><strong>Baleines à bosse :</strong> {saison_cetaces.mois_debut} à {saison_cetaces.mois_fin}, pendant l'hiver austral, pour mettre bas et se reproduire</span></li>
+                  <li><span className={styles.points__icon}>🐬</span><span><strong>Dauphins :</strong> présents toute l'année, curieux, ils suivent souvent le bateau</span></li>
+                  <li><span className={styles.points__icon}>🚤</span><span><strong>Sortie en mer de 3 h,</strong> 6 personnes max</span></li>
+                  <li><span className={styles.points__icon}>🛡️</span><span><strong>Protocole CAP</strong> et attestation d'observation CEDTM</span></li>
+                  <li><span className={styles.points__icon}>🤝</span><span><strong>Les animaux décident :</strong> jamais de poursuite</span></li>
+                </ul>
               </div>
               <div className={styles.intro__highlights}>
                 <div className={styles.highlight}>
@@ -77,17 +81,17 @@ export default function Cetaces() {
               <div className={styles.cap__item}>
                 <span className={styles.cap__letter}>C</span>
                 <h3>Comprendre</h3>
-                <p>Avant chaque sortie, Paco vous explique le comportement des cétacés, comment les identifier et comment interpréter leurs signaux pour ne jamais les perturber.</p>
+                <p>Briefing avant la sortie : comportement des cétacés et règles d'approche.</p>
               </div>
               <div className={styles.cap__item}>
                 <span className={styles.cap__letter}>A</span>
                 <h3>Approcher</h3>
-                <p>L'approche se fait toujours en douceur, moteur coupé, à distance réglementaire. Jamais de poursuite, jamais de geste brusque. Les animaux choisissent le contact.</p>
+                <p>En douceur, moteur coupé, à distance réglementaire. Jamais de poursuite : les animaux choisissent le contact.</p>
               </div>
               <div className={styles.cap__item}>
                 <span className={styles.cap__letter}>P</span>
                 <h3>Protéger</h3>
-                <p>Si un animal montre des signes de stress, on s'éloigne immédiatement. La protection de l'espèce passe avant tout.</p>
+                <p>Au moindre signe de stress, on s'éloigne. L'animal passe avant tout.</p>
               </div>
             </div>
           </div>
