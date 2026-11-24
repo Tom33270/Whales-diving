@@ -1,3 +1,4 @@
+import Icon, { ico } from '../Icon';
 import Link from 'next/link';
 import { useLang } from '../../context/LangContext';
 import AnimatedLogo from '../sections/AnimatedLogo';
@@ -12,14 +13,14 @@ export default function Footer() {
       <div className={styles.inner}>
         <div className={styles.brand}>
           <div className={styles.badge} aria-label="Whale Diving"><AnimatedLogo showHud={false} /></div>
-          <p className={styles.location}>📍 {t('footer.location')}</p>
+          <p className={styles.location}><Icon name="pin" /> {t('footer.location')}</p>
           <a
             href="https://g.page/r/CdSyR55qdAJUEBE/review"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.reviewBtn}
           >
-            ⭐ {t('footer.review_cta')}
+            <Icon name="star" /> {t('footer.review_cta')}
           </a>
         </div>
 

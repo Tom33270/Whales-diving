@@ -1,3 +1,4 @@
+import Icon, { ico } from '../components/Icon';
 import Head from 'next/head';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
@@ -50,7 +51,7 @@ export default function Exploration() {
               })}
             </div>
             <div className={styles.pricing__cta}>
-              <WhatsappBtn>{common.bookWhatsapp}</WhatsappBtn>
+              <WhatsappBtn>{ico(common.bookWhatsapp)}</WhatsappBtn>
             </div>
           </div>
         </section>

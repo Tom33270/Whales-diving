@@ -1,3 +1,4 @@
+import Icon, { ico } from '../Icon';
 import { useLang } from '../../context/LangContext';
 import sections from '../../locales/sections';
 import styles from '../../styles/About.module.css';
@@ -36,7 +37,7 @@ export default function About() {
             {p.timeline.map((step, i) => (
               <li key={i} className={styles.step}>
                 <span className={styles.step__icon}>
-                  {step.flags ? '✈️' : step.icon}
+                  <Icon e={step.flags ? '✈️' : step.icon} />
                 </span>
                 <div>
                   <strong>{step.title}</strong>
@@ -65,7 +66,7 @@ export default function About() {
           <div className={styles.creds}>
             {p.creds.map(([icon, title, sub]) => (
               <div key={title} className={styles.credTile}>
-                <span className={styles.credTile__icon}>{icon}</span>
+                <span className={styles.credTile__icon}><Icon e={icon} /></span>
                 <strong>{title}</strong>
                 <span>{sub}</span>
               </div>

@@ -1,3 +1,4 @@
+import Icon, { ico } from '../Icon';
 import { useLang } from '../../context/LangContext';
 import styles from '../../styles/Hero.module.css';
 import AnimatedLogo from './AnimatedLogo';
@@ -38,7 +39,7 @@ export default function Hero() {
   {t('hero.cta_instagram')}
 </a>
         </div>
-        <p className={styles.location}>📍 {t('hero.location')}</p>
+        <p className={styles.location}><Icon name="pin" /> {t('hero.location')}</p>
       </div>
       <div className={styles.logoAnime}>
         <AnimatedLogo />

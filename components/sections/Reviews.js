@@ -1,3 +1,4 @@
+import Icon, { ico } from '../Icon';
 import { useLang } from '../../context/LangContext';
 import styles from '../../styles/Reviews.module.css';
 
@@ -9,7 +10,7 @@ export default function Reviews() {
     <section className={styles.section} id="avis">
       <div className={styles.container}>
         <p className={styles.eyebrow}>{t('reviews.eyebrow')}</p>
-        <h2 className={styles.title}>{t('reviews.title')}</h2>
+        <h2 className={styles.title}>{ico(t('reviews.title'))}</h2>
         <p className={styles.subtitle}>{t('reviews.subtitle')}</p>
 
         <div className={styles.grid}>
@@ -43,7 +44,7 @@ export default function Reviews() {
             rel="noopener noreferrer"
             className={`${styles.bigBtn} ${styles.bigBtn__review}`}
           >
-            ⭐ {t('reviews.leave')}
+            <Icon name="star" /> {t('reviews.leave')}
           </a>
         </div>
       </div>

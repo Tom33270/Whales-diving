@@ -1,3 +1,4 @@
+import Icon, { ico } from '../components/Icon';
 import Head from 'next/head';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
@@ -46,7 +47,7 @@ export default function BaptemeInitiation() {
                     <span className={styles.pricing__price}>{i === 0 ? tarifs.bapteme : tarifs.initiation}€</span>
                   </div>
                   <ul className={styles.pricing__features}>
-                    {card.features.map((f, j) => <li key={j}>✓ {f}</li>)}
+                    {card.features.map((f, j) => <li key={j}><Icon name="check" /> {f}</li>)}
                   </ul>
                   <WhatsappBtn className={styles.btn__primary}>{common.reserve}</WhatsappBtn>
                 </div>

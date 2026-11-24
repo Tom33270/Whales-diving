@@ -1,3 +1,4 @@
+import Icon, { ico } from '../Icon';
 import Link from 'next/link';
 import content from '../../content.config';
 import styles from '../../styles/ActivityDetail.module.css';
@@ -19,12 +20,12 @@ export function ActivityHero({ image, c, common }) {
       <div className={styles.hero__overlay} />
       <div className={styles.hero__bg} style={{ backgroundImage: `url('${image}')` }} />
       <div className={styles.hero__content}>
-        <p className={styles.hero__eyebrow}>{c.eyebrow}</p>
+        <p className={styles.hero__eyebrow}>{ico(c.eyebrow)}</p>
         <h1 className={styles.hero__title}>{c.title}</h1>
         <p className={styles.hero__subtitle}>{c.subtitle}</p>
         <div className={styles.hero__ctas}>
-          <a href={contact.telephone_url} className={`${styles.btn} ${styles.btn__primary}`}>{common.call}</a>
-          <WhatsappBtn>{common.whatsapp}</WhatsappBtn>
+          <a href={contact.telephone_url} className={`${styles.btn} ${styles.btn__primary}`}>{ico(common.call)}</a>
+          <WhatsappBtn>{ico(common.whatsapp)}</WhatsappBtn>
         </div>
       </div>
     </section>
@@ -35,7 +36,7 @@ export function Points({ points }) {
   return (
     <ul className={styles.points}>
       {points.map(([e, b, t], i) => (
-        <li key={i}><span className={styles.points__icon}>{e}</span><span><strong>{b}</strong>{t ? ` ${t}` : ''}</span></li>
+        <li key={i}><span className={styles.points__icon}><Icon e={e} /></span><span><strong>{b}</strong>{t ? ` ${t}` : ''}</span></li>
       ))}
     </ul>
   );
@@ -55,7 +56,7 @@ export function ActivityIntro({ c }) {
             <div className={styles.intro__highlights}>
               {c.highlights.map(([e, s, p], i) => (
                 <div key={i} className={styles.highlight}>
-                  <span className={styles.highlight__icon}>{e}</span>
+                  <span className={styles.highlight__icon}><Icon e={e} /></span>
                   <div><strong>{s}</strong><p>{p}</p></div>
                 </div>
               ))}

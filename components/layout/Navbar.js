@@ -1,3 +1,4 @@
+import Icon, { ico } from '../Icon';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useLang } from '../../context/LangContext';
@@ -100,7 +101,7 @@ export default function Navbar() {
             </a>
           ))}
           <a href="tel:+262693873336" className={styles.mobileCta}>
-            📞 Appeler Paco
+            <Icon name="phone" /> Appeler Paco
           </a>
         </div>
       )}

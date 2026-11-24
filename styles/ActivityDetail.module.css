@@ -631,3 +631,7 @@
     font-size: 1.1rem;
   }
 }
+
+/* Icônes au trait (remplacent les emojis) */
+.points__icon, .highlight__icon { color: var(--color-navy); }
+.hero__eyebrow svg, .btn svg { margin-right: 0.15em; }

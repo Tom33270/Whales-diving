@@ -291,3 +291,5 @@
 @media (max-width: 1100px) {
   .creds { grid-template-columns: repeat(2, 1fr); }
 }
+
+.step__icon, .credTile__icon { color: var(--color-navy); }

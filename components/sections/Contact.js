@@ -1,3 +1,4 @@
+import Icon, { ico } from '../Icon';
 import { useLang } from '../../context/LangContext';
 import styles from '../../styles/Contact.module.css';
 
@@ -44,10 +45,10 @@ export default function Contact() {
               rel="noopener noreferrer"
               className={styles.emailLink}
             >
-              📍 {t('contact.address')}
+              <Icon name="pin" /> {t('contact.address')}
             </a>
             <p>
-              ✉️{' '}
+              <Icon name="mail" />{' '}
               <a href="mailto:whalediving.re@gmail.com" className={styles.emailLink}>
                 {t('contact.email')}
               </a>

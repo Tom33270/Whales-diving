@@ -1,3 +1,4 @@
+import Icon, { ico } from '../Icon';
 import { useLang } from '../../context/LangContext';
 import sections from '../../locales/sections';
 import styles from '../../styles/CetaceanBanner.module.css';
@@ -16,7 +17,7 @@ export default function CetaceanBanner() {
         <div className={styles.facts}>
           {w.facts.map(([icon, title, text]) => (
             <div key={title} className={styles.fact}>
-              <span className={styles.fact__icon}>{icon}</span>
+              <span className={styles.fact__icon}><Icon e={icon} /></span>
               <strong>{title}</strong>
               <span>{text}</span>
             </div>
@@ -31,7 +32,7 @@ export default function CetaceanBanner() {
               <div><strong>{w.north}</strong><span>{w.northSub}</span></div>
             </div>
             <div className={styles.route}>
-              <span className={styles.route__whale}>🐋</span>
+              <span className={styles.route__whale}><Icon name="whale" /></span>
               <span className={styles.route__label}>{w.arrow}</span>
             </div>
             <div className={`${styles.place} ${styles.place__south}`}>
@@ -62,12 +63,12 @@ export default function CetaceanBanner() {
         </div>
 
         <div className={styles.rules}>
-          <p className={styles.rules__title}>⚖️ {w.rulesTitle}</p>
+          <p className={styles.rules__title}><Icon name="scale" /> {w.rulesTitle}</p>
           <p className={styles.rules__sub}>{w.rulesSub}</p>
           <div className={styles.rules__grid}>
             {w.rules.map(([icon, title, text]) => (
               <div key={title} className={styles.rule}>
-                <span className={styles.rule__icon}>{icon}</span>
+                <span className={styles.rule__icon}><Icon e={icon} /></span>
                 <div><strong>{title}</strong><span>{text}</span></div>
               </div>
             ))}

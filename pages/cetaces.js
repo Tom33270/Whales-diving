@@ -1,3 +1,4 @@
+import Icon, { ico } from '../components/Icon';
 import Head from 'next/head';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
@@ -65,8 +66,8 @@ export default function Cetaces() {
               ))}
             </div>
             <div className={styles.pricing__cta}>
-              <a href={contact.telephone_url} className={`${styles.btn} ${styles.btn__primary}`}>{common.call}</a>
-              <WhatsappBtn>{common.whatsapp}</WhatsappBtn>
+              <a href={contact.telephone_url} className={`${styles.btn} ${styles.btn__primary}`}>{ico(common.call)}</a>
+              <WhatsappBtn>{ico(common.whatsapp)}</WhatsappBtn>
             </div>
           </div>
         </section>

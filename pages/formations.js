@@ -1,3 +1,4 @@
+import Icon, { ico } from '../components/Icon';
 import Head from 'next/head';
 import { useState } from 'react';
 import Navbar from '../components/layout/Navbar';
@@ -77,12 +78,12 @@ export default function Formations() {
                   <div>
                     <p className={styles.formationDetail__label}>{L.inclus}</p>
                     <ul className={styles.formationDetail__included}>
-                      {f.included.map((item, i) => <li key={i}>✓ {item}</li>)}
+                      {f.included.map((item, i) => <li key={i}><Icon name="check" /> {item}</li>)}
                     </ul>
                   </div>
                 </div>
-                {f.equivalent && <p className={styles.formationDetail__eq}>🌍 {L.equivalent} : {f.equivalent}</p>}
-                <WhatsappBtn>{L.reserve}</WhatsappBtn>
+                {f.equivalent && <p className={styles.formationDetail__eq}><Icon name="globe" /> {L.equivalent} : {f.equivalent}</p>}
+                <WhatsappBtn>{ico(L.reserve)}</WhatsappBtn>
               </div>
             )}
           </div>
