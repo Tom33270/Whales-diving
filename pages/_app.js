@@ -1,27 +1,39 @@
 import { LangProvider } from '../context/LangContext';
 import Head from 'next/head';
+import CookieBanner from '../components/layout/CookieBanner';
 import '../styles/globals.css';
 
 export default function App({ Component, pageProps }) {
   return (
     <LangProvider>
       <Head>
-          {/* Google Ads Tag */}
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18353131007" />
-  <script
-    dangerouslySetInnerHTML={{
-      __html: `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        {/* Google Ads : chargé seulement après accord du visiteur (bandeau cookies) */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      window.wdAdsOn = false;
+      function wdLoadAds() {
+        if (window.wdAdsOn) return;
+        window.wdAdsOn = true;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=AW-18353131007';
+        document.head.appendChild(s);
         gtag('js', new Date());
         gtag('config', 'AW-18353131007');
-      `
-    }}
-  />
-  <script
-  dangerouslySetInnerHTML={{
-    __html: `
+      }
+      function wdConsent() {
+        try {
+          var c = JSON.parse(localStorage.getItem('wd-consent') || 'null');
+          if (c && c.t && Date.now() - c.t < 15552000000) return c.v;
+        } catch (e) {}
+        return null;
+      }
+      if (wdConsent() === 'yes') wdLoadAds();
       function gtag_report_conversion(url) {
+        if (!window.wdAdsOn) return false;
         var callback = function () {
           if (typeof(url) != 'undefined') {
             window.location = url;
@@ -34,8 +46,8 @@ export default function App({ Component, pageProps }) {
         return false;
       }
     `
-  }}
-/>
+          }}
+        />
         <meta name="google-site-verification" content="y8EquUsBQN6V0bbxYD33poLSRaK7WYXvWeZslZIh_fg" />  
         {/* SEO de base */}
         <meta charSet="utf-8" />
@@ -147,6 +159,7 @@ export default function App({ Component, pageProps }) {
         />
       </Head>
       <Component {...pageProps} />
+      <CookieBanner />
     </LangProvider>
   );
 }

@@ -65,6 +65,14 @@ export default function Footer() {
               <a className={styles.legalLink}>{l.label}</a>
             </Link>
           ))}
+          <button
+            type="button"
+            className={styles.legalLink}
+            style={{ background: 'none', border: 0, padding: 0, textAlign: 'left', cursor: 'pointer', font: 'inherit' }}
+            onClick={() => window.dispatchEvent(new Event('wd-cookies-open'))}
+          >
+            Cookies
+          </button>
         </div>
       </div>
 
