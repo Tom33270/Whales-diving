@@ -8,9 +8,17 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: url('/images/logo.png') right top / 350px auto no-repeat;
-  opacity: 0.3;
+  background:
+    url('/images/logo-animation.png') 88% 7% / min(360px, 70vw) auto no-repeat,
+    radial-gradient(circle 280px at 82% 15%, rgba(205, 218, 230, 0.5), rgba(205, 218, 230, 0) 100%);
+  opacity: 0.7;
   z-index: 0;
+  pointer-events: none;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
 }
 
 .container {
@@ -60,9 +68,9 @@
 
 /* Carte */
 .card {
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1)), url('/images/baleine.jpg') center center / cover no-repeat;
-  border: 1px solid rgba(13, 33, 55, 0.1);
-  border-radius: 12px;
+  background: rgba(9, 24, 41, 0.86);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 16px;
   overflow: hidden;
   text-decoration: none;
   color: inherit;
@@ -102,7 +110,7 @@
 
 /* Corps de la carte */
 .card__body {
-  padding: 1.25rem 1.25rem 0.75rem;
+  padding: 1.25rem 1.25rem 1.25rem;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -118,36 +126,54 @@
 
 .card__title {
   font-family: var(--font-display);
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   letter-spacing: 0.04em;
-  color: var(--color-navy);
+  color: var(--color-white);
   margin-bottom: 0.5rem;
 }
 
 
 
+/* Gros bouton prix */
 .card__price {
-  display: inline-block;
-  font-size: 0.82rem;
-  font-weight: 700;
-  color: var(--color-teal);
-  background: rgba(0, 181, 181, 0.08);
-  padding: 0.25rem 0.65rem;
-  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1rem;
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
+  color: var(--color-white);
+  background: linear-gradient(135deg, #007a7a 0%, #00B5B5 50%, #007a7a 100%);
+  box-shadow: 0 6px 18px rgba(0, 181, 181, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Flèche */
+.card:hover .card__price {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 181, 181, 0.5);
+}
+
+.card__priceFrom {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.card__priceValue {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  letter-spacing: 0.04em;
+  line-height: 1;
+}
+
+/* Flèche (remplacée par le gros bouton prix) */
 .card__arrow {
-  padding: 0.75rem 1.25rem;
-  font-size: 1.1rem;
-  color: var(--color-teal);
-  font-weight: 700;
-  opacity: 0;
-  transition: opacity 0.2s;
-}
-
-.card:hover .card__arrow {
-  opacity: 1;
+  display: none;
 }
 
 /* Responsive */
@@ -161,5 +187,11 @@
 @media (max-width: 540px) {
   .grid {
     grid-template-columns: 1fr;
+  }
+}
+/* Téléphone : le logo en fond se fait discret pour ne pas gêner la lecture */
+@media (max-width: 540px) {
+  .section::before {
+    opacity: 0.22;
   }
 }

@@ -42,7 +42,7 @@ export default function PolitiqueConfidentialite() {
 
           <section className={styles.section}>
             <h2 className={styles.heading}>3. Cookies</h2>
-            <p>Ce site n'utilise aucun cookie de tracking ou publicitaire. Des cookies techniques strictement nécessaires au fonctionnement du site peuvent être déposés mais ne collectent aucune donnée personnelle.</p>
+            <p>Avec votre accord seulement, ce site utilise un cookie de mesure Google Ads (Google Ireland Ltd) pour savoir si nos publicités amènent des contacts, par exemple un clic sur le bouton WhatsApp. Sans accord, aucun cookie publicitaire n'est déposé et le site fonctionne normalement. Votre choix est conservé 6 mois sur votre appareil ; vous pouvez le modifier à tout moment avec le lien « Cookies » en bas de chaque page.</p>
           </section>
 
           <section className={styles.section}>

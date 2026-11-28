@@ -33,7 +33,7 @@
 }
 
 .logo__img {
-  height: 36px;
+  height: 44px;
   width: auto;
   object-fit: contain;
 }
@@ -128,6 +128,43 @@
   opacity: 1;
 }
 
+/* Sélecteur de langue en haut : visible partout */
+.langTop {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  flex-shrink: 0;
+}
+
+.langPill {
+  min-width: 36px;
+  padding: 0.35rem 0.55rem;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.langPill:hover {
+  color: var(--color-white);
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.langPill__active {
+  background: var(--color-teal);
+  color: var(--color-white);
+}
+
 /* CTA desktop */
 .ctaBtn {
    background: linear-gradient(135deg, #007a7a 0%, #00B5B5 50%, #007a7a 100%);
@@ -217,11 +254,51 @@
     display: none;
   }
 
+  /* Téléphone : le sélecteur de langue reste à côté du burger */
+  .langTop {
+    margin-left: auto;
+  }
+
+  .langTop + .right + .burger,
+  .burger {
+    margin-left: 0.75rem;
+  }
+
   .burger {
     display: flex;
   }
 
   .mobileMenu {
     display: flex;
+  }
+}
+/* Petits téléphones : tout tient sur une ligne (logo, langues, burger) */
+@media (max-width: 480px) {
+  .logo__sub {
+    display: none;
+  }
+
+  .logo__text {
+    font-size: 1.05rem;
+    letter-spacing: 0.04em;
+  }
+
+  .logo__img {
+    height: 38px;
+  }
+
+  .langTop {
+    gap: 0;
+    padding: 0.15rem;
+  }
+
+  .langPill {
+    min-width: 32px;
+    padding: 0.35rem 0.4rem;
+    font-size: 0.72rem;
+  }
+
+  .burger {
+    margin-left: 0.5rem;
   }
 }

@@ -1,9 +1,11 @@
+import Icon, { ico } from '../Icon';
 import { useLang } from '../../context/LangContext';
+import sections from '../../locales/sections';
 import styles from '../../styles/About.module.css';
 
 export default function About() {
-  const { t } = useLang();
-  const credentials = t('about.credentials');
+  const { t, lang } = useLang();
+  const p = (sections[lang] || sections.fr).paco;
 
   return (
     <section className={styles.section} id="paco">
@@ -28,18 +30,48 @@ export default function About() {
 
           <blockquote className={styles.quote}>{t('about.quote')}</blockquote>
 
-          {t('about.bio').split('\n\n').map((para, i) => (
-            <p key={i} className={styles.bio}>{para}</p>
-          ))}
+          <p className={styles.intro}>{p.intro}</p>
 
-          <ul className={styles.credentials}>
-            {Array.isArray(credentials) && credentials.map((cred, i) => (
-              <li key={i} className={styles.cred}>
-                <span className={styles.cred__dot} />
-                {cred}
+          <p className={styles.blockTitle}>{p.timelineTitle}</p>
+          <ol className={styles.timeline}>
+            {p.timeline.map((step, i) => (
+              <li key={i} className={styles.step}>
+                <span className={styles.step__icon}>
+                  <Icon e={step.flags ? '✈️' : step.icon} />
+                </span>
+                <div>
+                  <strong>{step.title}</strong>
+                  {step.flags ? (
+                    <span className={styles.step__flags}>
+                      {step.flags.map(([code, name]) => (
+                        <span key={code} className={styles.flag}>
+                          <img src={`/images/flags/${code}.svg`} alt="" />
+                          {name}
+                        </span>
+                      ))}
+                    </span>
+                  ) : (
+                    <span className={styles.step__text}>{step.text}</span>
+                  )}
+                </div>
               </li>
             ))}
-          </ul>
+          </ol>
+
+          <div className={styles.values}>
+            {p.values.map((v) => <span key={v} className={styles.value}>{v}</span>)}
+          </div>
+
+          <p className={styles.blockTitle}>{p.credsTitle}</p>
+          <div className={styles.creds}>
+            {p.creds.map(([icon, title, sub]) => (
+              <div key={title} className={styles.credTile}>
+                <span className={styles.credTile__icon}><Icon e={icon} /></span>
+                <strong>{title}</strong>
+                <span>{sub}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

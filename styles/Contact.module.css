@@ -74,26 +74,27 @@
 }
 
 .btn__whatsapp {
-  border:solid;
-   border-color: #1ebe5c;
+  background: linear-gradient(135deg, #128C7E 0%, #25D366 50%, #128C7E 100%);
+  color: var(--color-white);
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
 }
 
 .btn__whatsapp:hover {
-  background: white;
-   box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+  background: linear-gradient(135deg, #075E54 0%, #1ebe5c 50%, #075E54 100%);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
   transform: translateY(-2px);
 }
 
-.btn__insta {
-  background: transparent;
-  color: var(--color-navy);
-  border: 2px solid rgba(13, 33, 55, 0.15);
+.btn__outline {
+  background: linear-gradient(135deg, #833AB4 0%, #C13584 35%, #F77737 65%, #FCAF45 100%);
+  color: var(--color-white);
+  box-shadow: 0 4px 15px rgba(193, 53, 132, 0.3);
 }
 
-.btn__insta:hover {
-  border-color: var(--color-navy);
-  background: rgba(13, 33, 55, 0.04);
-  
+.btn__outline:hover {
+  background: linear-gradient(135deg, #6a2d9a 0%, #a02970 35%, #d4632a 65%, #e09438 100%);
+  box-shadow: 0 6px 20px rgba(193, 53, 132, 0.5);
+  transform: translateY(-2px);
 }
 
 /* Infos */

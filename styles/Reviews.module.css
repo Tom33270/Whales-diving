@@ -95,7 +95,47 @@
 
 /* Lien Google */
 .googleLink {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+/* Gros boutons : voir les avis / laisser un avis */
+.bigBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.1rem 2.2rem;
+  border-radius: 12px;
+  font-weight: 800;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: var(--color-white);
+  background: linear-gradient(135deg, #007a7a 0%, #00B5B5 50%, #007a7a 100%);
+  box-shadow: 0 6px 20px rgba(0, 181, 181, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bigBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(0, 181, 181, 0.5);
+}
+
+.bigBtn__review {
+  background: #EE2E60;
+  box-shadow: 0 6px 20px rgba(238, 46, 96, 0.35);
+}
+
+.bigBtn__review:hover {
+  box-shadow: 0 10px 26px rgba(238, 46, 96, 0.5);
+}
+
+@media (max-width: 640px) {
+  .bigBtn {
+    width: 100%;
+  }
 }
 
 .googleBtn {

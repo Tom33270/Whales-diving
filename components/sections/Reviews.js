@@ -1,3 +1,4 @@
+import Icon, { ico } from '../Icon';
 import { useLang } from '../../context/LangContext';
 import styles from '../../styles/Reviews.module.css';
 
@@ -9,7 +10,7 @@ export default function Reviews() {
     <section className={styles.section} id="avis">
       <div className={styles.container}>
         <p className={styles.eyebrow}>{t('reviews.eyebrow')}</p>
-        <h2 className={styles.title}>{t('reviews.title')}</h2>
+        <h2 className={styles.title}>{ico(t('reviews.title'))}</h2>
         <p className={styles.subtitle}>{t('reviews.subtitle')}</p>
 
         <div className={styles.grid}>
@@ -27,15 +28,23 @@ export default function Reviews() {
           ))}
         </div>
 
-        {/* Lien vers Google */}
+        {/* Gros boutons vers la fiche Google */}
         <div className={styles.googleLink}>
           <a
-            href="https://www.google.com/search?sca_esv=10e6a75516b6f51d&sxsrf=APpeQnveaiUMEW9jNAkhIEF646azm_Hqdw:1785174309099&q=Whale+Diving+Avis&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxI2MzA1NjWysDA1MDE0MAICS6MNjIyvGAXDMxJzUhVcMssy89IVHMsyixexYooBAO0woBdCAAAA&rldimm=6053528850410222292&tbm=lcl&hl=fr-FR&sa=X&ved=2ahUKEwi47rjEtPOVAxU2hv0HHSnXCqEQ9fQKegQIShAG&biw=1536&bih=695&dpr=1.25#lkt=LocalPoiReviews"
+            href="https://g.page/r/CdSyR55qdAJUEBE"
             target="_blank"
             rel="noopener noreferrer"
-            className={styles.googleBtn}
+            className={styles.bigBtn}
           >
-            Voir tous les avis sur Google →
+            {t('reviews.see_all')}
+          </a>
+          <a
+            href="https://g.page/r/CdSyR55qdAJUEBE/review"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`${styles.bigBtn} ${styles.bigBtn__review}`}
+          >
+            <Icon name="star" /> {t('reviews.leave')}
           </a>
         </div>
       </div>

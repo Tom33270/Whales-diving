@@ -42,14 +42,14 @@
   max-width: 700px;
   margin-left: clamp(1.5rem, 8vw, 12rem);
 }
-.logoSociete {
+.logoAnime {
   position: absolute;
-  right: 3rem;
-  bottom: 3rem;
-  width: 180px;
-  opacity: 0.55;
+  right: clamp(1rem, 4vw, 5rem);
+  top: 50%;
+  transform: translateY(-46%);
+  width: min(500px, 36vw);
   z-index: 2;
-
+  pointer-events: none;
 }
 
 .tagline {
@@ -64,7 +64,7 @@
 
 .title {
   font-family: var(--font-display);
-  font-size: clamp(3.5rem, 9vw, 7rem);
+  font-size: clamp(3.5rem, 5vw, 4.6rem);
   letter-spacing: 0.03em;
   line-height: 0.95;
   color: var(--color-white);
@@ -173,26 +173,45 @@
   50%       { transform: translateY(10px); opacity: 0.4; }
 }
 
+/* Tablette : le logo animé passe au-dessus du titre, comme sur téléphone */
+@media (max-width: 1024px) {
+  .logoAnime {
+    top: 72px;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 260px;
+  }
+
+  .content {
+    padding-top: 12rem;
+  }
+}
+
 /* Mobile */
 @media (max-width: 768px) {
   @media (max-width: 480px) {
   .content {
     margin-left: 0;
-    padding: 6rem 1rem 3rem;
+    padding: 10rem 1rem 3rem;
     max-width: 100%;
     width: 100%;
   }
 
 
-  .logoSociete {
-    width: 100px;
-    right: 1rem;
-    bottom: 1rem;
-    opacity: 0.4;
+  /* Téléphone : le logo animé passe au-dessus du titre, sans pousser les boutons */
+  .logoAnime {
+    top: 64px;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
   }
 
   .title {
-    font-size: clamp(2rem, 9vw, 2.8rem);
+    font-size: clamp(1.7rem, 7.6vw, 2.4rem);
+    letter-spacing: 0.01em;
+    max-width: 100%;
     word-break: normal;
     overflow-wrap: normal;
     hyphens: none;
